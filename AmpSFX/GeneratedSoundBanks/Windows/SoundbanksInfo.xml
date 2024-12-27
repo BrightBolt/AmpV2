@@ -1,470 +1,666 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Adam\RoR2Modding\AmpV2\AmpSFX\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Adam\RoR2Modding\AmpV2\AmpSFX\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Adam\RoR2Modding\AmpV2\AmpSFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Adam\RoR2Modding\AmpV2\AmpSFX\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
-	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="865939728" Language="SFX" Hash="433925032">
-			<ObjectPath>\SoundBanks\Default Work Unit\AmpSoundbank</ObjectPath>
+		<SoundBank Id="865939728" Type="User" Language="SFX" Hash="{40D6315A-DBD2-17B1-985E-6E3184EACEF0}">
 			<ShortName>AmpSoundbank</ShortName>
 			<Path>AmpSoundbank.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1520060982" Name="PlayBeamCharge" ObjectPath="\Events\Default Work Unit\PlayBeamCharge">
-					<IncludedMemoryFiles>
-						<File Id="706616777" Language="SFX">
-							<ShortName>ChargeBeam1.wav</ShortName>
-							<Path>SFX\ChargeBeam1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+			<Media>
+				<File Id="16687540" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FerroshotCreateFinal.wav</ShortName>
+					<CachePath>SFX/FerroshotCreateFinal_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="110367248" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LightningStreamEnd.wav</ShortName>
+					<CachePath>SFX/LightningStreamEnd_818F3B66.wem</CachePath>
+				</File>
+				<File Id="111936196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FulminationState.wav</ShortName>
+					<CachePath>SFX/FulminationState_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="142824659" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AimField.wav</ShortName>
+					<CachePath>SFX/AimField_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="145431782" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ReleaseField.wav</ShortName>
+					<CachePath>SFX/ReleaseField_818F3B66.wem</CachePath>
+				</File>
+				<File Id="171555746" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StormbladeHitV4.wav</ShortName>
+					<CachePath>SFX/StormbladeHitV4_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="212267084" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Surge.wav</ShortName>
+					<CachePath>SFX/Surge_818F3B66.wem</CachePath>
+				</File>
+				<File Id="226974468" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>boltstate2secwithwind.wav</ShortName>
+					<CachePath>SFX/boltstate2secwithwind_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="231233257" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HeatShockCharge.wav</ShortName>
+					<CachePath>SFX/HeatShockCharge_818F3B66.wem</CachePath>
+				</File>
+				<File Id="267548966" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SurgeExit.wav</ShortName>
+					<CachePath>SFX/SurgeExit_818F3B66.wem</CachePath>
+				</File>
+				<File Id="270257718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NemSpawnBurst.wav</ShortName>
+					<CachePath>SFX/NemSpawnBurst_818F3B66.wem</CachePath>
+				</File>
+				<File Id="286477067" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoltExit.wav</ShortName>
+					<CachePath>SFX/BoltExit_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="294908951" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BuffExit.wav</ShortName>
+					<CachePath>SFX/BuffExit_818F3B66.wem</CachePath>
+				</File>
+				<File Id="332363732" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BladesSpawn1.wav</ShortName>
+					<CachePath>SFX/BladesSpawn1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="333763192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SurgeEnter2.wav</ShortName>
+					<CachePath>SFX/SurgeEnter2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="337308023" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NemDeathCharge.wav</ShortName>
+					<CachePath>SFX/NemDeathCharge_818F3B66.wem</CachePath>
+				</File>
+				<File Id="355476522" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoltEnter.wav</ShortName>
+					<CachePath>SFX/BoltEnter_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="390082384" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FerroshotLaunchAlter.wav</ShortName>
+					<CachePath>SFX/FerroshotLaunchAlter_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="391751073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ChargeExplosion.wav</ShortName>
+					<CachePath>SFX/ChargeExplosion_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="430921292" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WormSummon.wav</ShortName>
+					<CachePath>SFX/WormSummon_818F3B66.wem</CachePath>
+				</File>
+				<File Id="439305442" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StormbladeHit2.wav</ShortName>
+					<CachePath>SFX/StormbladeHit2_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="439898417" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StormbladeHit1.wav</ShortName>
+					<CachePath>SFX/StormbladeHit1_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="444271671" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FulminationEnter.wav</ShortName>
+					<CachePath>SFX/FulminationEnter_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="452903732" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FulminationExitAlter.wav</ShortName>
+					<CachePath>SFX/FulminationExitAlter_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="475514569" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HeatShockHit.wav</ShortName>
+					<CachePath>SFX/HeatShockHit_818F3B66.wem</CachePath>
+				</File>
+				<File Id="480520510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LightningStreamStart.wav</ShortName>
+					<CachePath>SFX/LightningStreamStart_818F3B66.wem</CachePath>
+				</File>
+				<File Id="506281423" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ReleaseField2.wav</ShortName>
+					<CachePath>SFX/ReleaseField2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="513875902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HeatProjectileExplosion.wav</ShortName>
+					<CachePath>SFX/HeatProjectileExplosion_818F3B66.wem</CachePath>
+				</File>
+				<File Id="515949684" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BladesSpawn2.wav</ShortName>
+					<CachePath>SFX/BladesSpawn2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="524773087" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HeatShockSwing.wav</ShortName>
+					<CachePath>SFX/HeatShockSwing_818F3B66.wem</CachePath>
+				</File>
+				<File Id="529593956" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FireBeam2.wav</ShortName>
+					<CachePath>SFX/FireBeam2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="549584858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FluxBlades2.wav</ShortName>
+					<CachePath>SFX/FluxBlades2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="558615039" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexShoot.wav</ShortName>
+					<CachePath>SFX/VortexShoot_818F3B66.wem</CachePath>
+				</File>
+				<File Id="571697280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FerroshotCreateAlter.wav</ShortName>
+					<CachePath>SFX/FerroshotCreateAlter_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="590040022" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stormblade2Trim.wav</ShortName>
+					<CachePath>SFX/Stormblade2Trim_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="594529929" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Surge2.wav</ShortName>
+					<CachePath>SFX/Surge2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="632359708" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PassiveLoop.wav</ShortName>
+					<CachePath>SFX/PassiveLoop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="657366885" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NemSpawnDirt.wav</ShortName>
+					<CachePath>SFX/NemSpawnDirt_818F3B66.wem</CachePath>
+				</File>
+				<File Id="662641942" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexSpawn.wav</ShortName>
+					<CachePath>SFX/VortexSpawn_818F3B66.wem</CachePath>
+				</File>
+				<File Id="695068599" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexFlightLoopAlter2.wav</ShortName>
+					<CachePath>SFX/VortexFlightLoopAlter2_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="706616777" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ChargeBeam1.wav</ShortName>
+					<CachePath>SFX/ChargeBeam1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="707824451" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NemDeath.wav</ShortName>
+					<CachePath>SFX/NemDeath_818F3B66.wem</CachePath>
+				</File>
+				<File Id="718803146" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NemStakeCharge2.wav</ShortName>
+					<CachePath>SFX/NemStakeCharge2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="736458125" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexExplosionAlt.wav</ShortName>
+					<CachePath>SFX/VortexExplosionAlt_818F3B66.wem</CachePath>
+				</File>
+				<File Id="756615058" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LobbyEntrance.wav</ShortName>
+					<CachePath>SFX/LobbyEntrance_818F3B66.wem</CachePath>
+				</File>
+				<File Id="760072484" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stormblade1Remake.wav</ShortName>
+					<CachePath>SFX/Stormblade1Remake_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="774569860" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexFlightLoop.wav</ShortName>
+					<CachePath>SFX/VortexFlightLoop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="815760424" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LightningStream.wav</ShortName>
+					<CachePath>SFX/LightningStream_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="820673821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexCharge.wav</ShortName>
+					<CachePath>SFX/VortexCharge_818F3B66.wem</CachePath>
+				</File>
+				<File Id="835628925" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FieldLoop.wav</ShortName>
+					<CachePath>SFX/FieldLoop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="845905776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FerroshotCreateRemake.wav</ShortName>
+					<CachePath>SFX/FerroshotCreateRemake_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="885005710" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WormCharge.wav</ShortName>
+					<CachePath>SFX/WormCharge_818F3B66.wem</CachePath>
+				</File>
+				<File Id="919812550" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FluxBladeFire.wav</ShortName>
+					<CachePath>SFX/FluxBladeFire_818F3B66.wem</CachePath>
+				</File>
+				<File Id="980239621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VortexLoop.wav</ShortName>
+					<CachePath>SFX/VortexLoop_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1038060243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StormbladeHit3.wav</ShortName>
+					<CachePath>SFX/StormbladeHit3_230EF2E6.wem</CachePath>
+				</File>
+				<File Id="1062522064" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SummonStorm.wav</ShortName>
+					<CachePath>SFX/SummonStorm_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1070796600" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NemThrowStake.wav</ShortName>
+					<CachePath>SFX/NemThrowStake_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1520060982" Name="PlayBeamCharge">
+					<MediaRefs>
+						<MediaRef Id="706616777"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2949202722" Name="PlayBeamFire" ObjectPath="\Events\Default Work Unit\PlayBeamFire">
-					<IncludedMemoryFiles>
-						<File Id="529593956" Language="SFX">
-							<ShortName>FireBeam2.wav</ShortName>
-							<Path>SFX\FireBeam2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2949202722" Name="PlayBeamFire">
+					<MediaRefs>
+						<MediaRef Id="529593956"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2968179176" Name="PlayBoltEnter" ObjectPath="\Events\Default Work Unit\PlayBoltEnter">
-					<IncludedMemoryFiles>
-						<File Id="355476522" Language="SFX">
-							<ShortName>BoltEnter.wav</ShortName>
-							<Path>SFX\BoltEnter_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2968179176" Name="PlayBoltEnter">
+					<MediaRefs>
+						<MediaRef Id="355476522"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="8097650" Name="PlayBoltExit" ObjectPath="\Events\Default Work Unit\PlayBoltExit">
-					<IncludedMemoryFiles>
-						<File Id="286477067" Language="SFX">
-							<ShortName>BoltExit.wav</ShortName>
-							<Path>SFX\BoltExit_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="8097650" Name="PlayBoltExit">
+					<MediaRefs>
+						<MediaRef Id="286477067"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="226939687" Name="PlayBoltStateWind" ObjectPath="\Events\Default Work Unit\PlayBoltStateWind">
-					<IncludedMemoryFiles>
-						<File Id="226974468" Language="SFX">
-							<ShortName>boltstate2secwithwind.wav</ShortName>
-							<Path>SFX\boltstate2secwithwind_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="226939687" Name="PlayBoltStateWind">
+					<MediaRefs>
+						<MediaRef Id="226974468"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="646149459" Name="PlayBuffEnd" ObjectPath="\Events\Default Work Unit\PlayBuffEnd">
-					<IncludedMemoryFiles>
-						<File Id="294908951" Language="SFX">
-							<ShortName>BuffExit.wav</ShortName>
-							<Path>SFX\BuffExit_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="646149459" Name="PlayBuffEnd">
+					<MediaRefs>
+						<MediaRef Id="294908951"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3542417390" Name="PlayBuffLoop" ObjectPath="\Events\Default Work Unit\PlayBuffLoop">
-					<IncludedMemoryFiles>
-						<File Id="632359708" Language="SFX">
-							<ShortName>PassiveLoop.wav</ShortName>
-							<Path>SFX\PassiveLoop_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3542417390" Name="PlayBuffLoop">
+					<MediaRefs>
+						<MediaRef Id="632359708"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="14754508" Name="PlayChargeExplosion" ObjectPath="\Events\Default Work Unit\PlayChargeExplosion">
-					<IncludedMemoryFiles>
-						<File Id="391751073" Language="SFX">
-							<ShortName>ChargeExplosion.wav</ShortName>
-							<Path>SFX\ChargeExplosion_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="14754508" Name="PlayChargeExplosion">
+					<MediaRefs>
+						<MediaRef Id="391751073"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="439419" Name="PlayDeathCharge" ObjectPath="\Events\Default Work Unit\PlayDeathCharge">
-					<IncludedMemoryFiles>
-						<File Id="337308023" Language="SFX">
-							<ShortName>NemDeathCharge.wav</ShortName>
-							<Path>SFX\NemDeathCharge_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="439419" Name="PlayDeathCharge">
+					<MediaRefs>
+						<MediaRef Id="337308023"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2431378448" Name="PlayDeathExplosion" ObjectPath="\Events\Default Work Unit\PlayDeathExplosion">
-					<IncludedMemoryFiles>
-						<File Id="707824451" Language="SFX">
-							<ShortName>NemDeath.wav</ShortName>
-							<Path>SFX\NemDeath_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2431378448" Name="PlayDeathExplosion">
+					<MediaRefs>
+						<MediaRef Id="707824451"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3063511871" Name="PlayFerroshotCreate" ObjectPath="\Events\Default Work Unit\PlayFerroshotCreate">
-					<IncludedMemoryFiles>
-						<File Id="845905776" Language="SFX">
-							<ShortName>FerroshotCreateRemake.wav</ShortName>
-							<Path>SFX\FerroshotCreateRemake_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3063511871" Name="PlayFerroshotCreate">
+					<MediaRefs>
+						<MediaRef Id="845905776"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="714076673" Name="PlayFerroshotCreateAlter" ObjectPath="\Events\Default Work Unit\PlayFerroshotCreateAlter">
-					<IncludedMemoryFiles>
-						<File Id="571697280" Language="SFX">
-							<ShortName>FerroshotCreateAlter.wav</ShortName>
-							<Path>SFX\FerroshotCreateAlter_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="714076673" Name="PlayFerroshotCreateAlter">
+					<MediaRefs>
+						<MediaRef Id="571697280"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1703723986" Name="PlayFerroshotLaunch" ObjectPath="\Events\Default Work Unit\PlayFerroshotLaunch">
-					<IncludedMemoryFiles>
-						<File Id="16687540" Language="SFX">
-							<ShortName>FerroshotCreateFinal.wav</ShortName>
-							<Path>SFX\FerroshotCreateFinal_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1703723986" Name="PlayFerroshotLaunch">
+					<MediaRefs>
+						<MediaRef Id="16687540"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3779069530" Name="PlayFerroshotLaunchAlter" ObjectPath="\Events\Default Work Unit\PlayFerroshotLaunchAlter">
-					<IncludedMemoryFiles>
-						<File Id="390082384" Language="SFX">
-							<ShortName>FerroshotLaunchAlter.wav</ShortName>
-							<Path>SFX\FerroshotLaunchAlter_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3779069530" Name="PlayFerroshotLaunchAlter">
+					<MediaRefs>
+						<MediaRef Id="390082384"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2950764612" Name="PlayFieldAim" ObjectPath="\Events\Default Work Unit\PlayFieldAim">
-					<IncludedMemoryFiles>
-						<File Id="142824659" Language="SFX">
-							<ShortName>AimField.wav</ShortName>
-							<Path>SFX\AimField_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2950764612" Name="PlayFieldAim">
+					<MediaRefs>
+						<MediaRef Id="142824659"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2520482775" Name="PlayFieldLoop" ObjectPath="\Events\Default Work Unit\PlayFieldLoop">
-					<IncludedMemoryFiles>
-						<File Id="835628925" Language="SFX">
-							<ShortName>FieldLoop.wav</ShortName>
-							<Path>SFX\FieldLoop_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2520482775" Name="PlayFieldLoop">
+					<MediaRefs>
+						<MediaRef Id="835628925"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1355851356" Name="PlayFieldRelease" ObjectPath="\Events\Default Work Unit\PlayFieldRelease">
-					<IncludedMemoryFiles>
-						<File Id="145431782" Language="SFX">
-							<ShortName>ReleaseField.wav</ShortName>
-							<Path>SFX\ReleaseField_10C4C929.wem</Path>
-						</File>
-						<File Id="506281423" Language="SFX">
-							<ShortName>ReleaseField2.wav</ShortName>
-							<Path>SFX\ReleaseField2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1355851356" Name="PlayFieldRelease">
+					<MediaRefs>
+						<MediaRef Id="145431782"/>
+						<MediaRef Id="506281423"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2957140483" Name="PlayFluxBladesFire" ObjectPath="\Events\Default Work Unit\PlayFluxBladesFire">
-					<IncludedMemoryFiles>
-						<File Id="549584858" Language="SFX">
-							<ShortName>FluxBlades2.wav</ShortName>
-							<Path>SFX\FluxBlades2_10C4C929.wem</Path>
-						</File>
-						<File Id="919812550" Language="SFX">
-							<ShortName>FluxBladeFire.wav</ShortName>
-							<Path>SFX\FluxBladeFire_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2957140483" Name="PlayFluxBladesFire">
+					<MediaRefs>
+						<MediaRef Id="549584858"/>
+						<MediaRef Id="919812550"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="4242022952" Name="PlayFluxBladesSpawn" ObjectPath="\Events\Default Work Unit\PlayFluxBladesSpawn">
-					<IncludedMemoryFiles>
-						<File Id="332363732" Language="SFX">
-							<ShortName>BladesSpawn1.wav</ShortName>
-							<Path>SFX\BladesSpawn1_10C4C929.wem</Path>
-						</File>
-						<File Id="515949684" Language="SFX">
-							<ShortName>BladesSpawn2.wav</ShortName>
-							<Path>SFX\BladesSpawn2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="4242022952" Name="PlayFluxBladesSpawn">
+					<MediaRefs>
+						<MediaRef Id="332363732"/>
+						<MediaRef Id="515949684"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="865102867" Name="PlayFulminationEnter" ObjectPath="\Events\Default Work Unit\PlayFulminationEnter">
-					<IncludedMemoryFiles>
-						<File Id="444271671" Language="SFX">
-							<ShortName>FulminationEnter.wav</ShortName>
-							<Path>SFX\FulminationEnter_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="865102867" Name="PlayFulminationEnter">
+					<MediaRefs>
+						<MediaRef Id="444271671"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2184895701" Name="PlayFulminationExitAlter" ObjectPath="\Events\Default Work Unit\PlayFulminationExitAlter">
-					<IncludedMemoryFiles>
-						<File Id="452903732" Language="SFX">
-							<ShortName>FulminationExitAlter.wav</ShortName>
-							<Path>SFX\FulminationExitAlter_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2184895701" Name="PlayFulminationExitAlter">
+					<MediaRefs>
+						<MediaRef Id="452903732"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3680135630" Name="PlayFulminationState" ObjectPath="\Events\Default Work Unit\PlayFulminationState">
-					<IncludedMemoryFiles>
-						<File Id="111936196" Language="SFX">
-							<ShortName>FulminationState.wav</ShortName>
-							<Path>SFX\FulminationState_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3680135630" Name="PlayFulminationState">
+					<MediaRefs>
+						<MediaRef Id="111936196"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="360230241" Name="PlayHeatShockCharge" ObjectPath="\Events\Default Work Unit\PlayHeatShockCharge">
-					<IncludedMemoryFiles>
-						<File Id="231233257" Language="SFX">
-							<ShortName>HeatShockCharge.wav</ShortName>
-							<Path>SFX\HeatShockCharge_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="360230241" Name="PlayHeatShockCharge">
+					<MediaRefs>
+						<MediaRef Id="231233257"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="108685852" Name="PlayHeatShockHit" ObjectPath="\Events\Default Work Unit\PlayHeatShockHit">
-					<IncludedMemoryFiles>
-						<File Id="475514569" Language="SFX">
-							<ShortName>HeatShockHit.wav</ShortName>
-							<Path>SFX\HeatShockHit_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="108685852" Name="PlayHeatShockHit">
+					<MediaRefs>
+						<MediaRef Id="475514569"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1780917177" Name="PlayHeatShockSwing" ObjectPath="\Events\Default Work Unit\PlayHeatShockSwing">
-					<IncludedMemoryFiles>
-						<File Id="524773087" Language="SFX">
-							<ShortName>HeatShockSwing.wav</ShortName>
-							<Path>SFX\HeatShockSwing_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1780917177" Name="PlayHeatShockSwing">
+					<MediaRefs>
+						<MediaRef Id="524773087"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="4290250854" Name="PlayLightningStreamEnd" ObjectPath="\Events\Default Work Unit\PlayLightningStreamEnd">
-					<IncludedMemoryFiles>
-						<File Id="110367248" Language="SFX">
-							<ShortName>LightningStreamEnd.wav</ShortName>
-							<Path>SFX\LightningStreamEnd_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="4290250854" Name="PlayLightningStreamEnd">
+					<MediaRefs>
+						<MediaRef Id="110367248"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="562064113" Name="PlayLightningStreamLoop" ObjectPath="\Events\Default Work Unit\PlayLightningStreamLoop">
-					<IncludedMemoryFiles>
-						<File Id="815760424" Language="SFX">
-							<ShortName>LightningStream.wav</ShortName>
-							<Path>SFX\LightningStream_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="562064113" Name="PlayLightningStreamLoop">
+					<MediaRefs>
+						<MediaRef Id="815760424"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2690484557" Name="PlayLightningStreamStart" ObjectPath="\Events\Default Work Unit\PlayLightningStreamStart">
-					<IncludedMemoryFiles>
-						<File Id="480520510" Language="SFX">
-							<ShortName>LightningStreamStart.wav</ShortName>
-							<Path>SFX\LightningStreamStart_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2690484557" Name="PlayLightningStreamStart">
+					<MediaRefs>
+						<MediaRef Id="480520510"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="448412811" Name="PlayLobbyEntrance" ObjectPath="\Events\Default Work Unit\PlayLobbyEntrance">
-					<IncludedMemoryFiles>
-						<File Id="756615058" Language="SFX">
-							<ShortName>LobbyEntrance.wav</ShortName>
-							<Path>SFX\LobbyEntrance_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="448412811" Name="PlayLobbyEntrance">
+					<MediaRefs>
+						<MediaRef Id="756615058"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3871466292" Name="PlayNemSpawnBurst" ObjectPath="\Events\Default Work Unit\PlayNemSpawnBurst">
-					<IncludedMemoryFiles>
-						<File Id="270257718" Language="SFX">
-							<ShortName>NemSpawnBurst.wav</ShortName>
-							<Path>SFX\NemSpawnBurst_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3871466292" Name="PlayNemSpawnBurst">
+					<MediaRefs>
+						<MediaRef Id="270257718"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="417407266" Name="PlayNemSpawnDust" ObjectPath="\Events\Default Work Unit\PlayNemSpawnDust">
-					<IncludedMemoryFiles>
-						<File Id="657366885" Language="SFX">
-							<ShortName>NemSpawnDirt.wav</ShortName>
-							<Path>SFX\NemSpawnDirt_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="417407266" Name="PlayNemSpawnDust">
+					<MediaRefs>
+						<MediaRef Id="657366885"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1366997452" Name="PlayPlasmaAim" ObjectPath="\Events\Default Work Unit\PlayPlasmaAim">
-					<IncludedMemoryFiles>
-						<File Id="718803146" Language="SFX">
-							<ShortName>NemStakeCharge2.wav</ShortName>
-							<Path>SFX\NemStakeCharge2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1366997452" Name="PlayPlasmaAim">
+					<MediaRefs>
+						<MediaRef Id="718803146"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="4018580586" Name="PlayPlasmaExplosion" ObjectPath="\Events\Default Work Unit\PlayPlasmaExplosion">
-					<IncludedMemoryFiles>
-						<File Id="513875902" Language="SFX">
-							<ShortName>HeatProjectileExplosion.wav</ShortName>
-							<Path>SFX\HeatProjectileExplosion_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="4018580586" Name="PlayPlasmaExplosion">
+					<MediaRefs>
+						<MediaRef Id="513875902"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2222450664" Name="PlayPlasmaLaunch" ObjectPath="\Events\Default Work Unit\PlayPlasmaLaunch">
-					<IncludedMemoryFiles>
-						<File Id="1070796600" Language="SFX">
-							<ShortName>NemThrowStake.wav</ShortName>
-							<Path>SFX\NemThrowStake_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2222450664" Name="PlayPlasmaLaunch">
+					<MediaRefs>
+						<MediaRef Id="1070796600"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="232580406" Name="PlayQuicksurge" ObjectPath="\Events\Default Work Unit\PlayQuicksurge">
-					<IncludedMemoryFiles>
-						<File Id="212267084" Language="SFX">
-							<ShortName>Surge.wav</ShortName>
-							<Path>SFX\Surge_10C4C929.wem</Path>
-						</File>
-						<File Id="594529929" Language="SFX">
-							<ShortName>Surge2.wav</ShortName>
-							<Path>SFX\Surge2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="232580406" Name="PlayQuicksurge">
+					<MediaRefs>
+						<MediaRef Id="212267084"/>
+						<MediaRef Id="594529929"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="680631324" Name="PlayQuicksurgeEnter" ObjectPath="\Events\Default Work Unit\PlayQuicksurgeEnter">
-					<IncludedMemoryFiles>
-						<File Id="333763192" Language="SFX">
-							<ShortName>SurgeEnter2.wav</ShortName>
-							<Path>SFX\SurgeEnter2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="680631324" Name="PlayQuicksurgeEnter">
+					<MediaRefs>
+						<MediaRef Id="333763192"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1441430142" Name="PlayQuicksurgeExit" ObjectPath="\Events\Default Work Unit\PlayQuicksurgeExit">
-					<IncludedMemoryFiles>
-						<File Id="267548966" Language="SFX">
-							<ShortName>SurgeExit.wav</ShortName>
-							<Path>SFX\SurgeExit_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1441430142" Name="PlayQuicksurgeExit">
+					<MediaRefs>
+						<MediaRef Id="267548966"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3762598156" Name="PlayStormbladeHit1" ObjectPath="\Events\Default Work Unit\PlayStormbladeHit1">
-					<IncludedMemoryFiles>
-						<File Id="439898417" Language="SFX">
-							<ShortName>StormbladeHit1.wav</ShortName>
-							<Path>SFX\StormbladeHit1_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3762598156" Name="PlayStormbladeHit1">
+					<MediaRefs>
+						<MediaRef Id="439898417"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3762598159" Name="PlayStormbladeHit2" ObjectPath="\Events\Default Work Unit\PlayStormbladeHit2">
-					<IncludedMemoryFiles>
-						<File Id="439305442" Language="SFX">
-							<ShortName>StormbladeHit2.wav</ShortName>
-							<Path>SFX\StormbladeHit2_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3762598159" Name="PlayStormbladeHit2">
+					<MediaRefs>
+						<MediaRef Id="439305442"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3762598158" Name="PlayStormbladeHit3" ObjectPath="\Events\Default Work Unit\PlayStormbladeHit3">
-					<IncludedMemoryFiles>
-						<File Id="1038060243" Language="SFX">
-							<ShortName>StormbladeHit3.wav</ShortName>
-							<Path>SFX\StormbladeHit3_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3762598158" Name="PlayStormbladeHit3">
+					<MediaRefs>
+						<MediaRef Id="1038060243"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3762598153" Name="PlayStormbladeHit4" ObjectPath="\Events\Default Work Unit\PlayStormbladeHit4">
-					<IncludedMemoryFiles>
-						<File Id="171555746" Language="SFX">
-							<ShortName>StormbladeHitV4.wav</ShortName>
-							<Path>SFX\StormbladeHitV4_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3762598153" Name="PlayStormbladeHit4">
+					<MediaRefs>
+						<MediaRef Id="171555746"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1595742271" Name="PlayStormbladeSwing1" ObjectPath="\Events\Default Work Unit\PlayStormbladeSwing1">
-					<IncludedMemoryFiles>
-						<File Id="760072484" Language="SFX">
-							<ShortName>Stormblade1Remake.wav</ShortName>
-							<Path>SFX\Stormblade1Remake_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1595742271" Name="PlayStormbladeSwing1">
+					<MediaRefs>
+						<MediaRef Id="760072484"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1595742268" Name="PlayStormbladeSwing2" ObjectPath="\Events\Default Work Unit\PlayStormbladeSwing2">
-					<IncludedMemoryFiles>
-						<File Id="590040022" Language="SFX">
-							<ShortName>Stormblade2Trim.wav</ShortName>
-							<Path>SFX\Stormblade2Trim_56D34C19.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1595742268" Name="PlayStormbladeSwing2">
+					<MediaRefs>
+						<MediaRef Id="590040022"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2523590105" Name="PlaySummonStorm" ObjectPath="\Events\Default Work Unit\PlaySummonStorm">
-					<IncludedMemoryFiles>
-						<File Id="1062522064" Language="SFX">
-							<ShortName>SummonStorm.wav</ShortName>
-							<Path>SFX\SummonStorm_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2523590105" Name="PlaySummonStorm">
+					<MediaRefs>
+						<MediaRef Id="1062522064"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3314548191" Name="PlayVortexCharge" ObjectPath="\Events\Default Work Unit\PlayVortexCharge">
-					<IncludedMemoryFiles>
-						<File Id="820673821" Language="SFX">
-							<ShortName>VortexCharge.wav</ShortName>
-							<Path>SFX\VortexCharge_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3314548191" Name="PlayVortexCharge">
+					<MediaRefs>
+						<MediaRef Id="820673821"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="302608516" Name="PlayVortexExplosion" ObjectPath="\Events\Default Work Unit\PlayVortexExplosion">
-					<IncludedMemoryFiles>
-						<File Id="736458125" Language="SFX">
-							<ShortName>VortexExplosionAlt.wav</ShortName>
-							<Path>SFX\VortexExplosionAlt_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="302608516" Name="PlayVortexExplosion">
+					<MediaRefs>
+						<MediaRef Id="736458125"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2447326215" Name="PlayVortexFlightLoop" ObjectPath="\Events\Default Work Unit\PlayVortexFlightLoop">
-					<IncludedMemoryFiles>
-						<File Id="774569860" Language="SFX">
-							<ShortName>VortexFlightLoop.wav</ShortName>
-							<Path>SFX\VortexFlightLoop_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2447326215" Name="PlayVortexFlightLoop">
+					<MediaRefs>
+						<MediaRef Id="774569860"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="580140660" Name="PlayVortexFlightLoopAlt" ObjectPath="\Events\Default Work Unit\PlayVortexFlightLoopAlt">
-					<IncludedMemoryFiles>
-						<File Id="695068599" Language="SFX">
-							<ShortName>VortexFlightLoopAlter2.wav</ShortName>
-							<Path>SFX\VortexFlightLoopAlter2_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="580140660" Name="PlayVortexFlightLoopAlt">
+					<MediaRefs>
+						<MediaRef Id="695068599"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3831372565" Name="PlayVortexLoop" ObjectPath="\Events\Default Work Unit\PlayVortexLoop">
-					<IncludedMemoryFiles>
-						<File Id="980239621" Language="SFX">
-							<ShortName>VortexLoop.wav</ShortName>
-							<Path>SFX\VortexLoop_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3831372565" Name="PlayVortexLoop">
+					<MediaRefs>
+						<MediaRef Id="980239621"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1647409844" Name="PlayVortexShoot" ObjectPath="\Events\Default Work Unit\PlayVortexShoot">
-					<IncludedMemoryFiles>
-						<File Id="558615039" Language="SFX">
-							<ShortName>VortexShoot.wav</ShortName>
-							<Path>SFX\VortexShoot_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1647409844" Name="PlayVortexShoot">
+					<MediaRefs>
+						<MediaRef Id="558615039"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1130506740" Name="PlayVortexSpawn" ObjectPath="\Events\Default Work Unit\PlayVortexSpawn">
-					<IncludedMemoryFiles>
-						<File Id="662641942" Language="SFX">
-							<ShortName>VortexSpawn.wav</ShortName>
-							<Path>SFX\VortexSpawn_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1130506740" Name="PlayVortexSpawn">
+					<MediaRefs>
+						<MediaRef Id="662641942"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2778887358" Name="PlayWormCharge" ObjectPath="\Events\Default Work Unit\PlayWormCharge">
-					<IncludedMemoryFiles>
-						<File Id="885005710" Language="SFX">
-							<ShortName>WormCharge.wav</ShortName>
-							<Path>SFX\WormCharge_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2778887358" Name="PlayWormCharge">
+					<MediaRefs>
+						<MediaRef Id="885005710"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="538734731" Name="PlayWormSummon" ObjectPath="\Events\Default Work Unit\PlayWormSummon">
-					<IncludedMemoryFiles>
-						<File Id="430921292" Language="SFX">
-							<ShortName>WormSummon.wav</ShortName>
-							<Path>SFX\WormSummon_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="538734731" Name="PlayWormSummon">
+					<MediaRefs>
+						<MediaRef Id="430921292"/>
+					</MediaRefs>
 				</Event>
-			</IncludedEvents>
+			</Events>
 			<GameParameters>
-				<GameParameter Id="3673881719" Name="Volume_SFX" ObjectPath="\Game Parameters\Default Work Unit\Volume_SFX"/>
+				<GameParameter Id="3673881719" Name="Volume_SFX"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3316968734">
-			<ObjectPath>Init</ObjectPath>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BD974DC2-D35B-AA42-186C-7DC0DF1447FD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX"/>
+			</GameParameters>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
+	<FileHash>{DF9F5BED-CAE7-DB57-CAA2-3DC925CC84AC}</FileHash>
 </SoundBanksInfo>

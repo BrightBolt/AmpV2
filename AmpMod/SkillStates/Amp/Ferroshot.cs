@@ -33,7 +33,7 @@ namespace AmpMod.SkillStates
         private Transform leftMuzzleTransform;
 
 
-        public static GameObject ferroshotPrefabBasic = Modules.Assets.bulletPrepItem;
+        public static GameObject ferroshotPrefabBasic = Modules.Asset.bulletPrepItem;
 
         private float totalDuration;
         private float fireDuration;
@@ -43,7 +43,7 @@ namespace AmpMod.SkillStates
         private float distanceFromHead = 0.5f;
         private GameObject[] bullets = new GameObject[numOfBullets];
         private bool hasMuzzleEffect;
-        private GameObject muzzleEffectPrefab = Modules.Assets.ampBulletMuzzleEffect;
+        private GameObject muzzleEffectPrefab = Modules.Asset.ampBulletMuzzleEffect;
         private Transform fireMuzzleTransform;
 
         public override void OnEnter()

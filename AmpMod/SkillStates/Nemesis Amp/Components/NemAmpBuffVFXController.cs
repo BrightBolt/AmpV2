@@ -17,7 +17,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         private bool isMaxed;
         private GameObject buffOnEffect;
         private GameObject buffOffEffect;
-        private TemporaryOverlay buffOverlay;
+        private TemporaryOverlayInstance buffOverlay;
         private NemLightningColorController lightningController;
         private Transform modelTransform;
         private Material overlayMat;
@@ -76,13 +76,13 @@ namespace AmpMod.SkillStates.Nemesis_Amp
                 isMaxed = true;
 
                 //Debug.Log(characterModel);
-                buffOverlay = base.gameObject.AddComponent<TemporaryOverlay>();
+                buffOverlay = TemporaryOverlayManager.AddOverlay(base.gameObject);
                 buffOverlay.animateShaderAlpha = true;
                 buffOverlay.alphaCurve = AnimationCurve.EaseInOut(0f, 1f, 1f, 0f);
                 buffOverlay.destroyComponentOnEnd = true;
                 buffOverlay.duration = float.PositiveInfinity;
                 buffOverlay.originalMaterial = overlayMat;
-                buffOverlay.AddToCharacerModel(characterModel);
+                buffOverlay.AddToCharacterModel(characterModel);
 
                 sparkEffect.gameObject.SetActive(true);
 
@@ -102,9 +102,9 @@ namespace AmpMod.SkillStates.Nemesis_Amp
 
                 AkSoundEngine.StopPlayingID(endLoopID);
                 Util.PlaySound(maxEndString, base.gameObject);
-                if (this.buffOverlay)
+                if (this.buffOverlay != null)
                 {
-                    Destroy(buffOverlay);
+                    buffOverlay.Destroy();
                 }
 
                 if (sparkEffect.gameObject.activeInHierarchy)

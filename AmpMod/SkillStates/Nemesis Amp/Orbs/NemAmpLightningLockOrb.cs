@@ -78,10 +78,10 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Orbs
 				switch (blue)
                 {
                     case 0:
-						chainPrefab = Assets.lightningStreamChainEffectPrefab;
+						chainPrefab = Asset.lightningStreamChainEffectPrefab;
 							break;
 					case 1:
-						chainPrefab = Assets.lightningStreamChainEffectPrefabBlue;
+						chainPrefab = Asset.lightningStreamChainEffectPrefabBlue;
 							break;
 					default:
 						Debug.LogError("SyncChain: Invalid skin index received on server");

@@ -11,7 +11,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
     public class NemAmpSpawnVFXController : MonoBehaviour
     {
         public GameObject burstVFX;
-        public GameObject dustVFX = Assets.spawnDustEffect;
+        public GameObject dustVFX = Asset.spawnDustEffect;
         private String dustSFX = Modules.StaticValues.spawnDustSoundString;
         private string burstSFX = Modules.StaticValues.spawnBurstSoundString;
         public ChildLocator childLocator;
@@ -33,11 +33,11 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
 
             if (isBlue)
             {
-                burstVFX = Assets.spawnSecondaryExplosionEffectBlue;
+                burstVFX = Asset.spawnSecondaryExplosionEffectBlue;
             }
             else
             {
-                burstVFX = Assets.spawnSecondaryExplosionEffect;
+                burstVFX = Asset.spawnSecondaryExplosionEffect;
             } 
         }
         public void SpawnReleaseRing()

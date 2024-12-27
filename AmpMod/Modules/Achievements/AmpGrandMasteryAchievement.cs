@@ -6,7 +6,7 @@ using RoR2.Achievements;
 
 namespace AmpMod.Modules.Achievements
 {
-    [RegisterAchievement("AmpGrandMasteryUnlock", "Skins.Reformation", null, null)]
+    [RegisterAchievement("AmpGrandMasteryUnlock", "Skins.Reformation", null, 20, null)]
     public class AmpGrandMasteryAchievement : BaseEndingAchievement
     {
         public override BodyIndex LookUpRequiredBodyIndex()

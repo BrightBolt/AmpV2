@@ -20,7 +20,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
 		private float baseDuration = 1.5f;
 		private float basePrepDuration = .58f;
 		private float prepDuration;
-		private GameObject chargeMuzzlePrefab = Assets.photonChargeEffect;
+		private GameObject chargeMuzzlePrefab = Asset.photonChargeEffect;
 		private Transform headMuzzleObjectTransform;
 		private float duration;
 		private string muzzle = "LaserMuzzle";

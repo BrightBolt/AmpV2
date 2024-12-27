@@ -177,7 +177,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
                     maxDistance = 160f,
                     smartCollision = true,
                     damageType = DamageType.Generic,
-                   
+
                 };
                 beamAttack.AddModdedDamageType(DamageTypes.controlledChargeProc);
                 baseDamage = base.characterBody.damage * beamDamage;
@@ -192,6 +192,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
                 {
                     origin = handTransform.position,
                     rotation = handTransform.rotation,
+                    //forceUnpooled = true,
                 },
                 true);
                 //base.PlayAnimation("Gesture, Additive", "FireBeam", "BaseSkill.playbackRate", this.duration);

@@ -38,7 +38,7 @@ namespace AmpMod.SkillStates
                 skillName = prefix + "_AMP_BODY_SPECIAL_WORMCANCEL_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SPECIAL_WORMCANCEL_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SPECIAL_WORMCANCEL_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texReturn"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texReturn"),
                 activationStateMachineName = "Slide",
                 activationState = new SerializableEntityStateType(typeof(CancelWurm)),
                 baseMaxStock = 0,
@@ -76,7 +76,7 @@ namespace AmpMod.SkillStates
 
         private void SpawnWorm(CharacterBody characterBody)
         {
-            GameObject masterPrefab = Modules.Assets.melvinPrefab;
+            GameObject masterPrefab = Modules.Asset.melvinPrefab;
 
            // masterPrefab.GetComponent<CharacterMaster>().GetBody().baseMaxHealth = base.characterBody.baseMaxHealth * 3f;
 
@@ -111,7 +111,7 @@ namespace AmpMod.SkillStates
 
                 };
 
-                wormSummon.preSpawnSetupCallback = master => master.inventory.GiveItem(Assets.wormHealth);
+                wormSummon.preSpawnSetupCallback = master => master.inventory.GiveItem(Asset.wormHealth);
 
 
                 wormMaster = wormSummon.Perform();

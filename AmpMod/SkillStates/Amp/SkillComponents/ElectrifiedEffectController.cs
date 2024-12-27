@@ -8,16 +8,16 @@ namespace AmpMod.SkillStates.SkillComponents
 {
 	internal class ElectrifiedEffectController : MonoBehaviour
 	{
-		private TemporaryOverlay temporaryOverlay;
+		private TemporaryOverlayInstance temporaryOverlay;
 		public GameObject target;
-		private Material electrifiedMaterial = Modules.Assets.electrifiedMaterial;
+		private Material electrifiedMaterial = Modules.Asset.electrifiedMaterial;
 		public CharacterBody electrifiedBody;
 		private float duration = Modules.StaticValues.electrifiedDuration;
 		private float age;
 
 		private void Start()
 		{
-			this.temporaryOverlay = base.gameObject.AddComponent<TemporaryOverlay>();
+			this.temporaryOverlay = TemporaryOverlayManager.AddOverlay(base.gameObject);
 			this.temporaryOverlay.originalMaterial = this.electrifiedMaterial;
 
 
@@ -26,9 +26,9 @@ namespace AmpMod.SkillStates.SkillComponents
 				CharacterModel component = this.target.GetComponent<CharacterModel>();
 				if (component)
 				{
-					if (this.temporaryOverlay)
+					if (this.temporaryOverlay != null)
 					{
-						this.temporaryOverlay.AddToCharacerModel(component);
+						this.temporaryOverlay.AddToCharacterModel(component);
 					}
 
 				}
@@ -42,10 +42,10 @@ namespace AmpMod.SkillStates.SkillComponents
 			
 			if (!electrifiedBody.HasBuff(Modules.Buffs.electrified)) 
 			{
-				if (this.temporaryOverlay)
+				if (this.temporaryOverlay != null)
 				{
 					Debug.Log(age);
-					UnityEngine.Object.Destroy(this.temporaryOverlay);
+					temporaryOverlay.Destroy();
 				}
 				UnityEngine.Component.Destroy(this);
 			}

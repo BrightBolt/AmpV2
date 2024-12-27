@@ -5,7 +5,7 @@ using RoR2.Stats;
 
 namespace AmpMod.Modules.Achievements
 {
-    [RegisterAchievement("NemAmpLaserUnlock", "Skills.Laser", null, null)]
+    //[RegisterAchievement("NemAmpLaserUnlock", "Skills.Laser", null, null)]
     class NemAmpLaserAchievement : BaseStatMilestoneAchievement
 	{
 		public override StatDef statDef

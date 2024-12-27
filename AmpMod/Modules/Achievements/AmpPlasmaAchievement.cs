@@ -7,7 +7,7 @@ using RoR2.Stats;
 
 namespace AmpMod.Modules.Achievements
 {
-    [RegisterAchievement("AmpPlasmaUnlock", "Skills.PlasmaSlash", null, null)]
+    [RegisterAchievement("AmpPlasmaUnlock", "Skills.PlasmaSlash", null, 6, null)]
 	public class AmpPlasmaAchievement: BaseStatMilestoneAchievement
 	{
 

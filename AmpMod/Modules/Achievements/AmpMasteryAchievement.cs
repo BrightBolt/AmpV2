@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 namespace AmpMod.Modules.Achievements
 {
-    [RegisterAchievement("AmpMasteryUnlock", "Skins.RedSprite", null, null)]
+    [RegisterAchievement("AmpMasteryUnlock", "Skins.RedSprite", null, 10, null)]
     public class AmpMasteryAchievement : BaseAchievement
     {
         public string obliterateString = "mysteryspace";

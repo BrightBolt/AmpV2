@@ -40,7 +40,7 @@ namespace AmpMod.SkillStates
 		public float overlapFireFrequency = 30f;
 		public float overlapResetFrequency = 1f;
 		public float overlapVehicleDurationBonusPerHit;
-		public GameObject overlapHitEffectPrefab = Modules.Assets.electricImpactEffect;
+		public GameObject overlapHitEffectPrefab = Modules.Asset.electricImpactEffect;
 
 		[Header("Misc. Variables")]
 		private float age;

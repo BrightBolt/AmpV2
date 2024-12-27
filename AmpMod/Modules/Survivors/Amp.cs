@@ -33,8 +33,8 @@ namespace AmpMod.Modules.Survivors
             bodyNameToken = AmpPlugin.developerPrefix + "_AMP_BODY_NAME",
             //Color of skill names and stuff in menu
             bodyColor = new Color32(0, 145, 255, 255),
-            characterPortrait = Modules.Assets.LoadCharacterIcon("Amp"),
-            crosshair = Modules.Assets.LoadCrosshair("Standard"),
+            characterPortrait = Modules.Asset.LoadCharacterIcon("Amp"),
+            crosshair = Modules.Asset.LoadCrosshair("Standard"),
             damage = 12f,
             moveSpeed = 7.5f,
             healthGrowth = 33f,
@@ -48,8 +48,8 @@ namespace AmpMod.Modules.Survivors
 
         
        
-        internal static Material swordMat = Modules.Assets.CreateMaterial("matSword");
-        internal static Material suitMat = Modules.Assets.CreateMaterial("matSuit");
+        internal static Material swordMat = Modules.Asset.CreateMaterial("matSword");
+        internal static Material suitMat = Modules.Asset.CreateMaterial("matSuit");
         internal override int mainRendererIndex { get; set; } = 1;
 
         internal override CustomRendererInfo[] customRendererInfos { get; set; } = new CustomRendererInfo[] {
@@ -92,7 +92,7 @@ namespace AmpMod.Modules.Survivors
                 masterySkinUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 masterySkinUnlockableDef.cachedName = "Skins.RedSprite";
                 masterySkinUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_AMP_BODY_MASTERY";
-                masterySkinUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texMasteryAchievement");
+                masterySkinUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texMasteryAchievement");
                 ContentAddition.AddUnlockableDef(masterySkinUnlockableDef);
             }
 
@@ -110,7 +110,7 @@ namespace AmpMod.Modules.Survivors
                 wormSkillUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 wormSkillUnlockableDef.cachedName = "Skills.SummonWurm";
                 wormSkillUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_AMP_BODY_USURPER";
-                wormSkillUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texSummon");
+                wormSkillUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texSummon");
                 ContentAddition.AddUnlockableDef(wormSkillUnlockableDef);
             }
 
@@ -119,7 +119,7 @@ namespace AmpMod.Modules.Survivors
                 plasmaSkillUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 plasmaSkillUnlockableDef.cachedName = "Skills.PlasmaSlash";
                 plasmaSkillUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_AMP_BODY_PLASMA";
-                plasmaSkillUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texPlasma");
+                plasmaSkillUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texPlasma");
                 ContentAddition.AddUnlockableDef(plasmaSkillUnlockableDef);
             }
 
@@ -160,7 +160,7 @@ namespace AmpMod.Modules.Survivors
                 "Weapon", 
                 prefix + "_AMP_BODY_PRIMARY_SLASH_NAME", 
                 prefix + "_AMP_BODY_PRIMARY_SLASH_DESCRIPTION", 
-                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texStormblade"), 
+                Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texStormblade"), 
                 true, 
                 new String[] { "KEYWORD_AGILE", prefix + "_AMP_BODY_KEYWORD_CHARGE" },
                 true));
@@ -174,7 +174,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_SECONDARY_FERROSHOT_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SECONDARY_FERROSHOT_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SECONDARY_FERROSHOT_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texLorentz"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texLorentz"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Ferroshot)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -199,7 +199,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_SECONDARY_VORTEX_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SECONDARY_VORTEX_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SECONDARY_VORTEX_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texVortex"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texVortex"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Vortex)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -224,7 +224,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_SECONDARY_PLASMASLASH_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SECONDARY_PLASMASLASH_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SECONDARY_PLASMASLASH_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPlasma"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texPlasma"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.PlasmaSlash)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -257,7 +257,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_UTILITY_DASH_NAME",
                 skillNameToken = prefix + "_AMP_BODY_UTILITY_DASH_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_UTILITY_DASH_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSurge"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texSurge"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Surge)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -285,7 +285,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_UTILITY_BOOST_NAME",
                 skillNameToken = prefix + "_AMP_BODY_UTILITY_BOOST_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_UTILITY_BOOST_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPulse"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texPulse"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.AltPulseLeap)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 3,
@@ -317,7 +317,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_SPECIAL_CHAIN_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SPECIAL_CHAIN_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SPECIAL_CHAIN_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texFulmination"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texFulmination"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Fulmination)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -344,7 +344,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_SPECIAL_LIGHTNING_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SPECIAL_LIGHTNING_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SPECIAL_LIGHTNING_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texVoltaic"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texVoltaic"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.VoltaicBombardmentAim)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -369,7 +369,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_AMP_BODY_SPECIAL_WORM_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SPECIAL_WORM_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SPECIAL_WORM_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSummon"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texSummon"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.ChannelWurm)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -465,7 +465,7 @@ namespace AmpMod.Modules.Survivors
 
             #region DefaultSkin
             SkinDef defaultSkin = Modules.Skins.CreateSkinDef(AmpPlugin.developerPrefix + "_AMP_BODY_DEFAULT_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texMainSkin"),
+                Asset.mainAssetBundle.LoadAsset<Sprite>("texMainSkin"),
                 defaultRenderers,
                 mainRenderer,
                 updatedModel);
@@ -474,12 +474,12 @@ namespace AmpMod.Modules.Survivors
             {
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("Sword"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("Sword"),
                     renderer = defaultRenderers[0].renderer,
                 },
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("Suit"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("Suit"),
                     renderer = defaultRenderers[1].renderer
                 },
                /* new SkinDef.MeshReplacement
@@ -495,8 +495,8 @@ namespace AmpMod.Modules.Survivors
 
 
             #region MasterySkin
-            Material masterySuitMat = Modules.Assets.CreateMaterial("matSpriteSuit");
-            Material masterySwordMat = Modules.Assets.CreateMaterial("matSpriteSword");
+            Material masterySuitMat = Modules.Asset.CreateMaterial("matSpriteSuit");
+            Material masterySwordMat = Modules.Asset.CreateMaterial("matSpriteSword");
 
 
             CharacterModel.RendererInfo[] masteryRendererInfos = SkinRendererInfos(defaultRenderers, new Material[]
@@ -507,7 +507,7 @@ namespace AmpMod.Modules.Survivors
             });
 
             SkinDef masterySkin = Modules.Skins.CreateSkinDef(AmpPlugin.developerPrefix + "_AMP_BODY_MASTERY_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texMasteryAchievement"),
+                Asset.mainAssetBundle.LoadAsset<Sprite>("texMasteryAchievement"),
                 masteryRendererInfos,
                 mainRenderer,
                 model,
@@ -517,12 +517,12 @@ namespace AmpMod.Modules.Survivors
             {
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("SpriteSuitMesh"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("SpriteSuitMesh"),
                     renderer = defaultRenderers[0].renderer
                 },
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("Sword"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("Sword"),
                     renderer = defaultRenderers[1/*instance.mainRendererIndex*/].renderer
                 }
             };
@@ -542,8 +542,8 @@ namespace AmpMod.Modules.Survivors
 
 
             #region ReformationSkin
-            Material golemSuitMat = Modules.Assets.CreateMaterial("MasteryAmp");
-            Material golemSwordMat = Modules.Assets.CreateMaterial("MasteryAmp");
+            Material golemSuitMat = Modules.Asset.CreateMaterial("MasteryAmp");
+            Material golemSwordMat = Modules.Asset.CreateMaterial("MasteryAmp");
 
 
 
@@ -555,7 +555,7 @@ namespace AmpMod.Modules.Survivors
             });
 
             SkinDef golemSkin = Modules.Skins.CreateSkinDef(AmpPlugin.developerPrefix + "_AMP_BODY_GOLEM_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texReformationSkin"),
+                Asset.mainAssetBundle.LoadAsset<Sprite>("texReformationSkin"),
                 golemRendererInfos,
                 mainRenderer,
                 updatedModel);
@@ -565,12 +565,12 @@ namespace AmpMod.Modules.Survivors
             {
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("MasteryBody"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("MasteryBody"),
                     renderer = defaultRenderers[0].renderer
                 },
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("MasterySword"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("MasterySword"),
                     renderer = defaultRenderers[1].renderer
                 }
             };

@@ -39,7 +39,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
 		private float maxDistance = 10000f;
 		private float bulletRadius = 2f;
 		private float force = 10f;
-		private GameObject tracerEffectPrefab = Assets.photonTracer;
+		private GameObject tracerEffectPrefab = Asset.photonTracer;
 
 		[Header("Blast Variables")]
 		public float baseLaserBlastDamageCoefficient = StaticValues.baseLaserBlastDamageCoefficient;

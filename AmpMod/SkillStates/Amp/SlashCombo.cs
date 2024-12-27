@@ -37,7 +37,7 @@ namespace AmpMod.SkillStates
             this.muzzleString = swingIndex % 2 == 0 ? "SwingLeft" : "SwingRight";
             this.swingEffectPrefab = lightningController.swingEffect;
             this.hitEffectPrefab = lightningController.swingHitEffect;
-            this.impactSound = Modules.Assets.stormbladeHitSoundEvent.index;
+            this.impactSound = Modules.Asset.stormbladeHitSoundEvent.index;
             //this.hitStopDuration = EntityStates.Merc.GroundLight.hitPauseDuration;
 
         

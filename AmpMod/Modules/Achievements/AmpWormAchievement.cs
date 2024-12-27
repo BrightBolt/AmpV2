@@ -7,7 +7,7 @@ using RoR2.Achievements;
 
 namespace AmpMod.Modules.Achievements
 {
-	[RegisterAchievement("AmpWormUnlock", "Skills.SummonWurm", null, typeof(AmpWormAchievement.AmpWormServerAchievement))]
+	[RegisterAchievement("AmpWormUnlock", "Skills.SummonWurm", null, 8, typeof(AmpWormAchievement.AmpWormServerAchievement))]
 	public class AmpWormAchievement : BaseAchievement
     {
 

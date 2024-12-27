@@ -51,12 +51,12 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
             if (this.characterModel.GetComponent<ModelSkinController>().skins[this.characterBody.skinIndex].nameToken == AmpPlugin.developerPrefix + "_NEMAMP_BODY_MASTERY_SKIN_NAME" && !Config.NemOriginPurpleLightning.Value)
             {
                 isBlue = true;
-                indicatorPrefab = Assets.stormRangeIndicatorBlue;
+                indicatorPrefab = Asset.stormRangeIndicatorBlue;
 
             }
             else
             {
-                indicatorPrefab = Assets.stormRangeIndicator;
+                indicatorPrefab = Asset.stormRangeIndicator;
             }
 
             //don't change camera params for normal spawn

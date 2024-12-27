@@ -82,7 +82,7 @@ namespace AmpMod.SkillStates
                 origin = childLocator.FindChild("FootL").position,
                 scale = 1.5f,
             };
-            launchEffect = Modules.Assets.boltExitEffect;
+            launchEffect = Modules.Asset.boltExitEffect;
             //exitEffectPrefab = Modules.Assnhbvets.testLightningEffect;
             EffectManager.SpawnEffect(launchEffect, effectData, true);
 
@@ -154,7 +154,7 @@ namespace AmpMod.SkillStates
 
  
 
-            base.characterMotor.onHitGroundServer -= this.CharacterMotor_onHitGround;
+            base.characterMotor.onHitGroundAuthority -= this.CharacterMotor_onHitGround;
         }
 
 
@@ -165,7 +165,7 @@ namespace AmpMod.SkillStates
             if (NetworkServer.active && !base.characterBody.bodyFlags.HasFlag(CharacterBody.BodyFlags.IgnoreFallDamage))
             {
                 base.characterBody.bodyFlags |= CharacterBody.BodyFlags.IgnoreFallDamage;
-                base.characterMotor.onHitGroundServer += this.CharacterMotor_onHitGround;
+                base.characterMotor.onHitGroundAuthority += this.CharacterMotor_onHitGround;
             }
 
             base.OnExit();

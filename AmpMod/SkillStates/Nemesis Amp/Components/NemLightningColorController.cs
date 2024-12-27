@@ -83,125 +83,125 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
             if (isBlue)
             {
                 #region Death
-                deathExplosionVFX = Assets.deathExplosionEffectBlue;    
-                deathOverlay = Assets.matDeathOverlayBlue;
+                deathExplosionVFX = Asset.deathExplosionEffectBlue;    
+                deathOverlay = Asset.matDeathOverlayBlue;
                 #endregion
 
                 #region Gathering Storm
-                buffOffVFX = Assets.maxBuffOffEffectBlue;
-                buffOnVFX = Assets.maxBuffFlashEffectBlue;
-                buffOverlayMat = Assets.buffOverlayMatBlue;
+                buffOffVFX = Asset.maxBuffOffEffectBlue;
+                buffOnVFX = Asset.maxBuffFlashEffectBlue;
+                buffOverlayMat = Asset.buffOverlayMatBlue;
                 #endregion
 
                 #region Fulmination
-                streamVFX = Assets.lightningStreamEffectBlue;
-                streamMuzzleFlashVFX = Assets.lightningStreamMuzzleFlashBlue;
-                streamMuzzleVFX = Assets.lightningStreamMuzzleEffectBlue;
-                streamChainVFX = Assets.lightningStreamChainEffectPrefabBlue;
-                streamReticlePrefab = Assets.lightningCrosshairBlue;
-                streamImpactVFX = Assets.lightningStreamImpactEffectBlue;
+                streamVFX = Asset.lightningStreamEffectBlue;
+                streamMuzzleFlashVFX = Asset.lightningStreamMuzzleFlashBlue;
+                streamMuzzleVFX = Asset.lightningStreamMuzzleEffectBlue;
+                streamChainVFX = Asset.lightningStreamChainEffectPrefabBlue;
+                streamReticlePrefab = Asset.lightningCrosshairBlue;
+                streamImpactVFX = Asset.lightningStreamImpactEffectBlue;
                 #endregion
 
                 #region Lorentz Blades              
-                bladePrepVFX = Assets.bladePrepObjectBlue;
-                bladeFireVFX = Assets.bladeFireEffectBlue;
+                bladePrepVFX = Asset.bladePrepObjectBlue;
+                bladeFireVFX = Asset.bladeFireEffectBlue;
                 bladePrefab = Projectiles.bladeProjectilePrefabBlue;
                 #endregion
 
                 #region Furious Spark
-                beamMuzzleVFX = Assets.beamMuzzleFlashEffectBlue;
-                beamChargeVFX = Assets.chargeBeamMuzzleEffectBlue;
-                beamObject = Assets.chargeBeamTracerPrefabBlue;
+                beamMuzzleVFX = Asset.beamMuzzleFlashEffectBlue;
+                beamChargeVFX = Asset.chargeBeamMuzzleEffectBlue;
+                beamObject = Asset.chargeBeamTracerPrefabBlue;
                 #endregion
 
                 #region Static Field
-                fieldAimVFX = Assets.aimFieldMuzzleEffectBlue;
-                fieldMuzzleVFX = Assets.releaseFieldMuzzleEffectBlue;
+                fieldAimVFX = Asset.aimFieldMuzzleEffectBlue;
+                fieldMuzzleVFX = Asset.releaseFieldMuzzleEffectBlue;
                 fieldPrefab = Projectiles.fieldProjectilePrefabBlue;
                 #endregion
 
                 #region Voidsurge
-                dashEnterExitVFX = Assets.dashEnterEffectBlue;
-                dashPrefab = Assets.dashVFXPrefabBlue;
+                dashEnterExitVFX = Asset.dashEnterEffectBlue;
+                dashPrefab = Asset.dashVFXPrefabBlue;
                 lightningStakePrefab = Projectiles.lightningStakePrefabBlue;
-                lightningStakeMuzzleVFX = Assets.lightningBallMuzzleFlashEffectBlue;
-                lightningStakeFlashVFX = Assets.lightningStakeFlashEffectBlue;
-                chargeLightningStakeVFX = Assets.lightningStakeMuzzleObjectBlue;
-                dashPrimaryVFX = Assets.plasmaActiveVFXBlue;
+                lightningStakeMuzzleVFX = Asset.lightningBallMuzzleFlashEffectBlue;
+                lightningStakeFlashVFX = Asset.lightningStakeFlashEffectBlue;
+                chargeLightningStakeVFX = Asset.lightningStakeMuzzleObjectBlue;
+                dashPrimaryVFX = Asset.plasmaActiveVFXBlue;
                 #endregion
 
                 #region Voltaic Onslaught
-                specialMuzzleVFX = Assets.stormMuzzleFlashEffectBlue;
+                specialMuzzleVFX = Asset.stormMuzzleFlashEffectBlue;
                 specialBoltVFX = LegacyResourcesAPI.Load<GameObject>("Prefabs/Effects/ImpactEffects/SimpleLightningStrikeImpact");
                 #endregion
 
                 #region Photon Shot 
-                specialBeamImpact = Assets.photonImpactBlue;
-                specialBeamImpactDetonate = Assets.photonImpactDetonateBlue;
-                specialBeamMuzzleFlash = Assets.photonMuzzleFlashBlue;
-                specialBeamTracer = Assets.photonTracerBlue;
+                specialBeamImpact = Asset.photonImpactBlue;
+                specialBeamImpactDetonate = Asset.photonImpactDetonateBlue;
+                specialBeamMuzzleFlash = Asset.photonMuzzleFlashBlue;
+                specialBeamTracer = Asset.photonTracerBlue;
                 #endregion
             }
             else
             {
                 #region Death
-                deathExplosionVFX = Assets.deathExplosionEffect;
-                deathOverlay = Assets.matDeathOverlay;
+                deathExplosionVFX = Asset.deathExplosionEffect;
+                deathOverlay = Asset.matDeathOverlay;
                 #endregion
 
                 #region Gathering Storm
-                buffOffVFX = Assets.maxBuffOffEffect;
-                buffOnVFX = Assets.maxBuffFlashEffect;
-                buffOverlayMat = Assets.buffOverlayMat;
+                buffOffVFX = Asset.maxBuffOffEffect;
+                buffOnVFX = Asset.maxBuffFlashEffect;
+                buffOverlayMat = Asset.buffOverlayMat;
                 #endregion
 
                 #region Fulmination
-                streamVFX = Assets.lightningStreamEffect;
-                streamMuzzleFlashVFX = Assets.lightningStreamMuzzleFlash;
-                streamMuzzleVFX = Assets.lightningStreamMuzzleEffect;
-                streamChainVFX = Assets.lightningStreamChainEffectPrefab;
-                streamReticlePrefab = Assets.lightningCrosshair;
-                streamImpactVFX = Assets.lightningStreamImpactEffect;
+                streamVFX = Asset.lightningStreamEffect;
+                streamMuzzleFlashVFX = Asset.lightningStreamMuzzleFlash;
+                streamMuzzleVFX = Asset.lightningStreamMuzzleEffect;
+                streamChainVFX = Asset.lightningStreamChainEffectPrefab;
+                streamReticlePrefab = Asset.lightningCrosshair;
+                streamImpactVFX = Asset.lightningStreamImpactEffect;
                 #endregion
 
                 #region Lorentz Blades
-                bladePrepVFX = Assets.bladePrepObject;
-                bladeFireVFX = Assets.bladeFireEffect;
+                bladePrepVFX = Asset.bladePrepObject;
+                bladeFireVFX = Asset.bladeFireEffect;
                 bladePrefab = Projectiles.bladeProjectilePrefab;
                 #endregion
 
                 #region Furious Spark
-                beamMuzzleVFX = Assets.beamMuzzleFlashEffect;
-                beamChargeVFX = Assets.chargeBeamMuzzleEffect;
-                beamObject = Assets.chargeBeamTracerPrefab;
+                beamMuzzleVFX = Asset.beamMuzzleFlashEffect;
+                beamChargeVFX = Asset.chargeBeamMuzzleEffect;
+                beamObject = Asset.chargeBeamTracerPrefab;
                 #endregion
 
                 #region Static Field
-                fieldAimVFX = Assets.aimFieldMuzzleEffect;
-                fieldMuzzleVFX = Assets.releaseFieldMuzzleEffect;
+                fieldAimVFX = Asset.aimFieldMuzzleEffect;
+                fieldMuzzleVFX = Asset.releaseFieldMuzzleEffect;
                 fieldPrefab = Projectiles.fieldProjectilePrefab;
                 #endregion
 
                 #region Voidsurge
-                dashEnterExitVFX = Assets.dashEnterEffect;
-                dashPrefab = Assets.dashVFXPrefab;
+                dashEnterExitVFX = Asset.dashEnterEffect;
+                dashPrefab = Asset.dashVFXPrefab;
                 lightningStakePrefab = Projectiles.lightningStakePrefab;
-                lightningStakeMuzzleVFX = Assets.lightningBallMuzzleFlashEffect;
-                lightningStakeFlashVFX = Assets.lightningStakeFlashEffect;
-                chargeLightningStakeVFX = Assets.lightningStakeMuzzleObject;
-                dashPrimaryVFX = Assets.plasmaActiveVFX;
+                lightningStakeMuzzleVFX = Asset.lightningBallMuzzleFlashEffect;
+                lightningStakeFlashVFX = Asset.lightningStakeFlashEffect;
+                chargeLightningStakeVFX = Asset.lightningStakeMuzzleObject;
+                dashPrimaryVFX = Asset.plasmaActiveVFX;
                 #endregion
 
                 #region Voltaic Onslaught
-                specialMuzzleVFX = Assets.stormMuzzleFlashEffect;
-                specialBoltVFX = Assets.purpleStormBoltEffect;
+                specialMuzzleVFX = Asset.stormMuzzleFlashEffect;
+                specialBoltVFX = Asset.purpleStormBoltEffect;
                 #endregion
 
                 #region Photon Shot 
-                specialBeamImpact = Assets.photonImpact;
-                specialBeamImpactDetonate = Assets.photonDetonateExplosion;
-                specialBeamMuzzleFlash = Assets.photonMuzzleFlash;
-                specialBeamTracer = Assets.photonTracer;
+                specialBeamImpact = Asset.photonImpact;
+                specialBeamImpactDetonate = Asset.photonDetonateExplosion;
+                specialBeamMuzzleFlash = Asset.photonMuzzleFlash;
+                specialBeamTracer = Asset.photonTracer;
                 #endregion
             }
         }

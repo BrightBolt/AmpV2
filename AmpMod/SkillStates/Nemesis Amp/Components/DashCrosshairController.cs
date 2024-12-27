@@ -12,7 +12,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
      class DashCrosshairController : MonoBehaviour
     {
         private OverlayController overlayController;
-        private GameObject overlayPrefab = Assets.plasmaCrosshair;
+        private GameObject overlayPrefab = Asset.plasmaCrosshair;
         private string overlayChildLocatorEntry = "CrosshairExtras";
 
         public void EnableCrosshair()

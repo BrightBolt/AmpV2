@@ -1,5 +1,4 @@
-﻿using AncientScepter;
-using R2API;
+﻿using R2API;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
@@ -56,7 +55,7 @@ namespace AmpMod.Modules
 
         private static void CreateFluxBlade()
         {
-            bladeProjectilePrefab = Assets.mainAssetBundle.LoadAsset<GameObject>("BladeProjectilePrefab");
+            bladeProjectilePrefab = Asset.mainAssetBundle.LoadAsset<GameObject>("BladeProjectilePrefab");
             bladeProjectilePrefab.layer = LayerIndex.projectile.intVal;
 
    
@@ -65,17 +64,17 @@ namespace AmpMod.Modules
             bladeProjectileGhostBlue = CreateGhostPrefab("BladeGhostPrefabBlue");
 
             ProjectileSingleTargetImpact bladeContactController = bladeProjectilePrefab.GetComponent<ProjectileSingleTargetImpact>();
-            bladeContactController.impactEffect = Assets.bulletImpactEffect;
+            bladeContactController.impactEffect = Asset.bulletImpactEffect;
 
             var dmgTypeHolder = bladeProjectilePrefab.AddComponent<ModdedDamageTypeHolderComponent>();
             dmgTypeHolder.Add(DamageTypes.controlledChargeProcProjectile);
 
             #region Blue
-            bladeProjectilePrefabBlue = Assets.mainAssetBundle.LoadAsset<GameObject>("BladeProjectilePrefabBlue");
+            bladeProjectilePrefabBlue = Asset.mainAssetBundle.LoadAsset<GameObject>("BladeProjectilePrefabBlue");
             bladeProjectilePrefabBlue.layer = LayerIndex.projectile.intVal;
 
             ProjectileSingleTargetImpact bladeContactControllerBlue = bladeProjectilePrefabBlue.GetComponent<ProjectileSingleTargetImpact>();
-            bladeContactControllerBlue.impactEffect = Assets.bulletImpactEffect;
+            bladeContactControllerBlue.impactEffect = Asset.bulletImpactEffect;
 
             var dmgTypeHolderBlue = bladeProjectilePrefabBlue.AddComponent<ModdedDamageTypeHolderComponent>();
             dmgTypeHolderBlue.Add(DamageTypes.controlledChargeProcProjectile);
@@ -97,8 +96,8 @@ namespace AmpMod.Modules
         private static void CreateLightningBall()
         {
 
-            Assets.CreateIntersectMaterial("matTransparentLightningPurple");
-            lightningStakePrefab = Assets.mainAssetBundle.LoadAsset<GameObject>("LightningBallProjectilePrefab");
+            Asset.CreateIntersectMaterial("matTransparentLightningPurple");
+            lightningStakePrefab = Asset.mainAssetBundle.LoadAsset<GameObject>("LightningBallProjectilePrefab");
             lightningStakePrefab.layer = LayerIndex.projectile.intVal;
 
             ProjectileController lightningBallController = lightningStakePrefab.GetComponent<ProjectileController>();
@@ -114,7 +113,7 @@ namespace AmpMod.Modules
             damageHolder.Add(DamageTypes.controlledChargeProc);
 
             #region Blue
-            lightningStakePrefabBlue = Assets.mainAssetBundle.LoadAsset<GameObject>("LightningBallProjectilePrefabBlue");
+            lightningStakePrefabBlue = Asset.mainAssetBundle.LoadAsset<GameObject>("LightningBallProjectilePrefabBlue");
             lightningStakePrefabBlue.layer = LayerIndex.projectile.intVal;
 
             ProjectileController lightningBallControllerBlue = lightningStakePrefabBlue.GetComponent<ProjectileController>();
@@ -133,7 +132,7 @@ namespace AmpMod.Modules
 
         private static void CreateStaticField()
         {
-            fieldProjectilePrefab = Assets.mainAssetBundle.LoadAsset<GameObject>("StaticFieldDOT");
+            fieldProjectilePrefab = Asset.mainAssetBundle.LoadAsset<GameObject>("StaticFieldDOT");
 
             //use blast attacks instead of DOT Zones
             var damageComponent = fieldProjectilePrefab.AddComponent<SkillStates.Nemesis_Amp.Components.StaticFieldDamage>();
@@ -151,7 +150,7 @@ namespace AmpMod.Modules
             PrefabAPI.RegisterNetworkPrefab(fieldProjectilePrefab);
 
             #region Blue
-            fieldProjectilePrefabBlue = Assets.mainAssetBundle.LoadAsset<GameObject>("StaticFieldDOTBlue");
+            fieldProjectilePrefabBlue = Asset.mainAssetBundle.LoadAsset<GameObject>("StaticFieldDOTBlue");
 
             var blueDamageComponent = fieldProjectilePrefabBlue.AddComponent<SkillStates.Nemesis_Amp.Components.StaticFieldDamage>();
             blueDamageComponent.procCoefficient = StaticValues.staticFieldTickProcCoefficient;
@@ -172,7 +171,7 @@ namespace AmpMod.Modules
         {
             //ferroshotPrefab = CloneProjectilePrefab("LunarShardProjectile", "Ferroshot");
 
-            ferroshotPrefab = Assets.mainAssetBundle.LoadAsset<GameObject>("SpikeProjectile");
+            ferroshotPrefab = Asset.mainAssetBundle.LoadAsset<GameObject>("SpikeProjectile");
             //ferroshotPrefab.layer = LayerIndex.projectile.intVal;
             //change damagetype of ferroshot to generic
             //ProjectileDamage ferroshotDamage = ferroshotPrefab.GetComponent<ProjectileDamage>();
@@ -198,7 +197,7 @@ namespace AmpMod.Modules
             ProjectileController ferroshotController = ferroshotPrefab.GetComponent<ProjectileController>();
          
             //instantiates the projectile model and associates it with the prefab
-            if (Assets.mainAssetBundle.LoadAsset<GameObject>("SpikeGhost") != null) ferroshotController.ghostPrefab = CreateGhostPrefab("SpikeGhost");
+            if (Asset.mainAssetBundle.LoadAsset<GameObject>("SpikeGhost") != null) ferroshotController.ghostPrefab = CreateGhostPrefab("SpikeGhost");
 
 
             ferroshotController.procCoefficient = .7f;
@@ -208,7 +207,7 @@ namespace AmpMod.Modules
             ProjectileSingleTargetImpact ferroshotContact = ferroshotPrefab.AddComponent<ProjectileSingleTargetImpact>();
             InitializeFerroshotContact(ferroshotContact);
             ferroshotContact.destroyOnWorld = true;
-            ferroshotContact.impactEffect = Assets.bulletImpactEffect;
+            ferroshotContact.impactEffect = Asset.bulletImpactEffect;
 
 
             PrefabAPI.RegisterNetworkPrefab(ferroshotPrefab);
@@ -217,11 +216,11 @@ namespace AmpMod.Modules
 
         private static void CreateVortex()
         {
-            vortexPrefab = Assets.mainAssetBundle.LoadAsset<GameObject>("VortexProjectile");
+            vortexPrefab = Asset.mainAssetBundle.LoadAsset<GameObject>("VortexProjectile");
 
             ProjectileController vortexController = vortexPrefab.GetComponent<ProjectileController>();
             //instantiates the  projectile model and associates it with the prefab
-            if (Assets.mainAssetBundle.LoadAsset<GameObject>("VortexEffect") != null) vortexController.ghostPrefab = CreateGhostPrefab("VortexEffect");
+            if (Asset.mainAssetBundle.LoadAsset<GameObject>("VortexEffect") != null) vortexController.ghostPrefab = CreateGhostPrefab("VortexEffect");
             vortexController.allowPrediction = true;
             
             //code for giving flight loop sound to vortex projectile and making it stop on contact
@@ -256,14 +255,14 @@ namespace AmpMod.Modules
 
         private static void CreateFireBeam()
         {
-            fireBeamPrefab = Assets.mainAssetBundle.LoadAsset<GameObject>("HeatProjectile");
+            fireBeamPrefab = Asset.mainAssetBundle.LoadAsset<GameObject>("HeatProjectile");
             //fireBeamPrefab.layer = LayerIndex.projectile.intVal;
 
             var damageTypeComponent = fireBeamPrefab.AddComponent<ModdedDamageTypeHolderComponent>();
             damageTypeComponent.Add(DamageTypes.strongBurnIfCharged);
 
             ProjectileController heatController = fireBeamPrefab.GetComponent<ProjectileController>();
-            if (Assets.mainAssetBundle.LoadAsset<GameObject>("HeatProjectileGhost") != null) heatController.ghostPrefab = CreateGhostPrefab("HeatProjectileGhost");
+            if (Asset.mainAssetBundle.LoadAsset<GameObject>("HeatProjectileGhost") != null) heatController.ghostPrefab = CreateGhostPrefab("HeatProjectileGhost");
             heatController.allowPrediction = true;
 
             PrefabAPI.RegisterNetworkPrefab(fireBeamPrefab);
@@ -327,11 +326,11 @@ namespace AmpMod.Modules
 
         private static GameObject CreateGhostPrefab(string ghostName)
         {
-            GameObject ghostPrefab = Modules.Assets.mainAssetBundle.LoadAsset<GameObject>(ghostName);
+            GameObject ghostPrefab = Modules.Asset.mainAssetBundle.LoadAsset<GameObject>(ghostName);
             if (!ghostPrefab.GetComponent<NetworkIdentity>()) ghostPrefab.AddComponent<NetworkIdentity>();
             if (!ghostPrefab.GetComponent<ProjectileGhostController>()) ghostPrefab.AddComponent<ProjectileGhostController>();
 
-            Modules.Assets.ConvertAllRenderersToHopooShader(ghostPrefab);
+            Modules.Asset.ConvertAllRenderersToHopooShader(ghostPrefab);
 
             return ghostPrefab;
         }

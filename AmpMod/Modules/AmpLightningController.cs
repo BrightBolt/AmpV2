@@ -47,67 +47,67 @@ namespace AmpMod.Modules
             isRed = this.model.GetComponent<ModelSkinController>().skins[this.body.skinIndex].nameToken == AmpPlugin.developerPrefix + "_AMP_BODY_MASTERY_SKIN_NAME" && !Config.RedSpriteBlueLightning.Value;
 
             if (isRed) {
-                surgeVehicle = Assets.boltVehicle;
-                surgeVehicle.GetComponentInChildren<ParticleSystemRenderer>().trailMaterial = Assets.matRedLightning;
+                surgeVehicle = Asset.boltVehicle;
+                surgeVehicle.GetComponentInChildren<ParticleSystemRenderer>().trailMaterial = Asset.matRedLightning;
                 Light light = surgeVehicle.GetComponentInChildren<Light>();
                 light.color = new Color32(191, 2, 0, 255);
   
-                surgeEnter = Assets.boltEnterEffectRed;
-                surgeExitEffect = Assets.boltExitEffectRed;
+                surgeEnter = Asset.boltEnterEffectRed;
+                surgeExitEffect = Asset.boltExitEffectRed;
 
                 //vortexMuzzle = Assets.vortexMuzzleEffectRed;
-                vortexMuzzle = Assets.vortexMuzzleEffect;
+                vortexMuzzle = Asset.vortexMuzzleEffect;
 
                 lorentzProjectile = Projectiles.ferroshotPrefab;
-                lorentzProjectile.GetComponent<ProjectileController>().ghostPrefab.GetComponentInChildren<TrailRenderer>().SetMaterial(Assets.matRedTrail);
+                lorentzProjectile.GetComponent<ProjectileController>().ghostPrefab.GetComponentInChildren<TrailRenderer>().SetMaterial(Asset.matRedTrail);
                 
-                fulminationEffect = Assets.electricStreamEffectRed;
-                fulminationHitEffect = Assets.electricImpactEffectRed;
-                fulminationChainEffect = Assets.electricChainEffectRed;
+                fulminationEffect = Asset.electricStreamEffectRed;
+                fulminationHitEffect = Asset.electricImpactEffectRed;
+                fulminationChainEffect = Asset.electricChainEffectRed;
 
-                chargeOrb = Assets.chargeOrbRedObject;
-                chargeOrbFull = Assets.chargeOrbFullRedObject;
-                chargeExplosion = Assets.chargeExplosionEffectRed;
-                swingEffect = Assets.swordSwingEffectRed;
-                swingHitEffect = Assets.swordHitImpactEffectRed;
+                chargeOrb = Asset.chargeOrbRedObject;
+                chargeOrbFull = Asset.chargeOrbFullRedObject;
+                chargeExplosion = Asset.chargeExplosionEffectRed;
+                swingEffect = Asset.swordSwingEffectRed;
+                swingHitEffect = Asset.swordHitImpactEffectRed;
 
-                pulseLeapEffect = Assets.pulseBlastEffectRed;
-                pulseMuzzleEffect = Assets.pulseMuzzleEffectRed;
+                pulseLeapEffect = Asset.pulseBlastEffectRed;
+                pulseMuzzleEffect = Asset.pulseMuzzleEffectRed;
 
-                bombardmentMuzzleEffect = Assets.lightningMuzzleChargePrefabRed;
-                bombardmentEffect = Assets.lightningStrikePrefabRed;
+                bombardmentMuzzleEffect = Asset.lightningMuzzleChargePrefabRed;
+                bombardmentEffect = Asset.lightningStrikePrefabRed;
 
 
             } 
             else
             {
-                surgeVehicle = Assets.boltVehicle;
-                surgeVehicle.GetComponentInChildren<ParticleSystemRenderer>().trailMaterial = Assets.matBlueLightning;
+                surgeVehicle = Asset.boltVehicle;
+                surgeVehicle.GetComponentInChildren<ParticleSystemRenderer>().trailMaterial = Asset.matBlueLightning;
                 Light light = surgeVehicle.GetComponentInChildren<Light>();
                 light.color = new Color32(16, 192, 255, 0);
-                surgeEnter = Assets.boltEnterEffect;
-                surgeExitEffect = Assets.boltExitEffect;
+                surgeEnter = Asset.boltEnterEffect;
+                surgeExitEffect = Asset.boltExitEffect;
 
                 lorentzProjectile = Projectiles.ferroshotPrefab;
-                lorentzProjectile.GetComponent<ProjectileController>().ghostPrefab.GetComponentInChildren<TrailRenderer>().SetMaterial(Assets.matBlueTrail);
+                lorentzProjectile.GetComponent<ProjectileController>().ghostPrefab.GetComponentInChildren<TrailRenderer>().SetMaterial(Asset.matBlueTrail);
 
-                vortexMuzzle = Assets.vortexMuzzleEffect;
+                vortexMuzzle = Asset.vortexMuzzleEffect;
 
-                fulminationEffect = Assets.electricStreamEffect;
-                fulminationHitEffect = Assets.electricImpactEffect;
-                fulminationChainEffect = Assets.electricChainEffect;
+                fulminationEffect = Asset.electricStreamEffect;
+                fulminationHitEffect = Asset.electricImpactEffect;
+                fulminationChainEffect = Asset.electricChainEffect;
 
-                chargeOrb = Assets.chargeOrbObject;
-                chargeOrbFull = Assets.chargeOrbFullObject;
-                chargeExplosion = Assets.chargeExplosionEffect;
-                swingEffect = Assets.swordSwingEffect;
-                swingHitEffect = Assets.swordHitImpactEffect;
+                chargeOrb = Asset.chargeOrbObject;
+                chargeOrbFull = Asset.chargeOrbFullObject;
+                chargeExplosion = Asset.chargeExplosionEffect;
+                swingEffect = Asset.swordSwingEffect;
+                swingHitEffect = Asset.swordHitImpactEffect;
 
-                pulseLeapEffect = Assets.pulseBlastEffect;
-                pulseMuzzleEffect = Assets.pulseMuzzleEffect;
+                pulseLeapEffect = Asset.pulseBlastEffect;
+                pulseMuzzleEffect = Asset.pulseMuzzleEffect;
 
-                bombardmentMuzzleEffect = Assets.lightningMuzzleChargePrefab;
-                bombardmentEffect = Assets.lightningStrikePrefab;
+                bombardmentMuzzleEffect = Asset.lightningMuzzleChargePrefab;
+                bombardmentEffect = Asset.lightningStrikePrefab;
 
 
             }

@@ -164,7 +164,7 @@ namespace AmpMod.SkillStates
 
 
 
-			base.characterMotor.onHitGroundServer -= this.CharacterMotor_onHitGround;
+			base.characterMotor.onHitGroundAuthority -= this.CharacterMotor_onHitGround;
 		}
 
 
@@ -179,7 +179,7 @@ namespace AmpMod.SkillStates
 			if (NetworkServer.active && !base.characterBody.bodyFlags.HasFlag(CharacterBody.BodyFlags.IgnoreFallDamage))
 			{
 				base.characterBody.bodyFlags |= CharacterBody.BodyFlags.IgnoreFallDamage;
-				base.characterMotor.onHitGroundServer += this.CharacterMotor_onHitGround;
+				base.characterMotor.onHitGroundAuthority += this.CharacterMotor_onHitGround;
 			}
 
 			if (utilitySlot && cancelSkillDef)

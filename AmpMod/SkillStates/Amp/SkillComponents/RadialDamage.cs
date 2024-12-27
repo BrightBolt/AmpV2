@@ -66,7 +66,7 @@ namespace AmpMod.SkillStates
 
 			//play spawn sound i don't care if this isn't a good way to code things i'm not making a separate component for this
 			//AkSoundEngine.PostEvent(spawnSound, gameObject);
-			PointSoundManager.EmitSoundServer(Modules.Assets.vortexSpawnSoundEvent.index, this.transform.position);
+			PointSoundManager.EmitSoundServer(Modules.Asset.vortexSpawnSoundEvent.index, this.transform.position);
 
 			//NetworkSoundEventDef spawnEvent;
 
@@ -74,7 +74,7 @@ namespace AmpMod.SkillStates
 
 			//play looping vortex sound
 			//AkSoundEngine.PostEvent(loopString, gameObject);
-			PointSoundManager.EmitSoundServer(Modules.Assets.vortexLoopSoundEvent.index, this.transform.position);
+			PointSoundManager.EmitSoundServer(Modules.Asset.vortexLoopSoundEvent.index, this.transform.position);
 
 
 		}
@@ -83,7 +83,7 @@ namespace AmpMod.SkillStates
 			attacker = (this.projectileController.owner ? this.projectileController.owner.gameObject : null);
 			charBody = (attacker ? attacker.GetComponent<CharacterBody>() : null);
 			this.ResetOverlap();
-			explosionEffect = Modules.Assets.vortexExplosionEffect;
+			explosionEffect = Modules.Asset.vortexExplosionEffect;
 
 			radialBlast = new BlastAttack
 			{

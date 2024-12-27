@@ -38,7 +38,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
 
         private void Awake()
 		{
-			this.indicator = new Indicator(base.gameObject, Assets.lightningCrosshair);
+			this.indicator = new Indicator(base.gameObject, Asset.lightningCrosshair);
 
 		}
 

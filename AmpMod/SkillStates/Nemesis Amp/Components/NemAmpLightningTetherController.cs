@@ -37,22 +37,29 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         private NetworkInstanceId ___targetRootNetId;
         private NetworkInstanceId ___ownerRootNetId;
 
+        private void Awake()
+        {
+            //returns null if put in Start() for some reason, who knows
+            this.model = base.GetComponentInChildren<CharacterModel>();
+        }
+
         private void Start()    
         {
+
             lightningTracker = base.GetComponent<NemAmpLightningTracker>();
-            
-            
-            this.model = base.GetComponentInChildren<CharacterModel>();
+            if (lightningTracker != null) Debug.Log("lightningTracker is good");
+
             baseBody = base.GetComponent<CharacterBody>();
+            
 
             if (this.model.GetComponent<ModelSkinController>().skins[this.baseBody.skinIndex].nameToken == AmpPlugin.developerPrefix + "_NEMAMP_BODY_MASTERY_SKIN_NAME" && !Config.NemOriginPurpleLightning.Value)
             {
-                lightningTetherVFX = Assets.lightningStreamEffectBlue;
+                lightningTetherVFX = Asset.lightningStreamEffectBlue;
             }
 
             else
             {
-                lightningTetherVFX = Assets.lightningStreamEffect;
+                lightningTetherVFX = Asset.lightningStreamEffect;
             }
 
             lineRendererPrefab = lightningTetherVFX.GetComponentInChildren<LineRenderer>();

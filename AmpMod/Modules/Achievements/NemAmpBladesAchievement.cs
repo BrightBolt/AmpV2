@@ -10,7 +10,7 @@ using AmpMod.SkillStates.Nemesis_Amp;
 
 namespace AmpMod.Modules.Achievements
 {
-    [RegisterAchievement("NemAmpBladesUnlock", "Skills.TrackingBlades", null, null)]//typeof(NemAmpBladesServerAchievement))]
+    [RegisterAchievement("NemAmpBladesUnlock", "Skills.TrackingBlades", null, 5, null)]//typeof(NemAmpBladesServerAchievement))]
     public class NemAmpBladesAchievement : BaseAchievement
     {
         public override BodyIndex LookUpRequiredBodyIndex()

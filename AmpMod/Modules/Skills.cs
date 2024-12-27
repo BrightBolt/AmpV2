@@ -75,7 +75,7 @@ namespace AmpMod.Modules
                 skillName = prefix + "_NEMAMP_BODY_UTILITY_LIGHTNINGBALL_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_UTILITY_LIGHTNINGBALL_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_UTILITY_LIGHTNINGBALL_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texNemPlasmaBall"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texNemPlasmaBall"),
                 activationStateMachineName = "Weapon",
                 activationState = new SerializableEntityStateType(typeof(SkillStates.Nemesis_Amp.FireLightningSpear)),
                 baseMaxStock = 1,
@@ -99,7 +99,7 @@ namespace AmpMod.Modules
                 skillName = prefix + "_AMP_BODY_SPECIAL_CANCELDASH_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SPECIAL_CANCELDASH_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SPECIAL_CANCELDASH_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texCancelSurge"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texCancelSurge"),
                 activationStateMachineName = "Slide",
                 activationState = new SerializableEntityStateType(typeof(SkillStates.CancelSkill)),
                 baseMaxStock = 0,
@@ -124,7 +124,7 @@ namespace AmpMod.Modules
                 skillName = prefix + "_AMP_BODY_SPECIAL_CANCELCHAIN_NAME",
                 skillNameToken = prefix + "_AMP_BODY_SPECIAL_CANCELCHAIN_NAME",
                 skillDescriptionToken = prefix + "_AMP_BODY_SPECIAL_CANCELCHAIN_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texCancelFulmination"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texCancelFulmination"),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 0,
                 baseRechargeInterval = 0,
@@ -150,7 +150,7 @@ namespace AmpMod.Modules
             {
                 string prefix = AmpPlugin.developerPrefix + "_AMP_BODY_";
                 skillLocator.passiveSkill.enabled = true;
-                skillLocator.passiveSkill.icon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texCharge");
+                skillLocator.passiveSkill.icon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texCharge");
                 skillLocator.passiveSkill.skillNameToken = prefix + "PASSIVE_NAME";
                 skillLocator.passiveSkill.skillDescriptionToken = prefix + "PASSIVE_DESCRIPTION";
                 skillLocator.passiveSkill.keywordToken = prefix + "KEYWORD_CHARGE";
@@ -159,7 +159,7 @@ namespace AmpMod.Modules
             {
                 string prefix = AmpPlugin.developerPrefix + "_NEMAMP_BODY_";
                 skillLocator.passiveSkill.enabled = true;
-                skillLocator.passiveSkill.icon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texNemPassive");
+                skillLocator.passiveSkill.icon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texNemPassive");
                 skillLocator.passiveSkill.skillNameToken = prefix + "PASSIVE_NAME";
                 skillLocator.passiveSkill.skillDescriptionToken = prefix + "PASSIVE_DESCRIPTION";
             }
@@ -374,7 +374,8 @@ namespace AmpMod.Modules
             skillDef.rechargeStock = skillDefInfo.rechargeStock;
             skillDef.requiredStock = skillDefInfo.requiredStock;
             skillDef.stockToConsume = skillDefInfo.stockToConsume;
-            
+           
+                
             skillDef.keywordTokens = skillDefInfo.keywordTokens;
 
             skillDefs.Add(skillDef);

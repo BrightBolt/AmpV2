@@ -110,9 +110,9 @@ namespace AmpMod.SkillStates
                     
                   
                      //set vars for the radial damage component of the vortex blackhole prefab
-                    var vortexDamage = Modules.Assets.vortexBlackholePrefab.GetComponent<RadialDamage>();
+                    var vortexDamage = Modules.Asset.vortexBlackholePrefab.GetComponent<RadialDamage>();
                     //vortexDamage.radius = 5f;
-                    vortexDamage.duration = Modules.Assets.vortexBlackholePrefab.GetComponent<ProjectileSimple>().lifetime;
+                    vortexDamage.duration = Modules.Asset.vortexBlackholePrefab.GetComponent<ProjectileSimple>().lifetime;
 
                    // Debug.Log(base.gameObject);
                     FireProjectileInfo fireProjectileInfo = new FireProjectileInfo

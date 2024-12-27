@@ -34,8 +34,8 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         private bool lightningTetherActive;
         private Transform rightMuzzleTransform;
         private Transform nexusMuzzleTransform;
-        private GameObject muzzleEffect = Assets.lightningStreamMuzzleEffect;
-        private GameObject muzzleFlashEffect = Assets.lightningStreamMuzzleFlash;
+        private GameObject muzzleEffect = Asset.lightningStreamMuzzleEffect;
+        private GameObject muzzleFlashEffect = Asset.lightningStreamMuzzleFlash;
         private GameObject muzzleFlashObject;
         private bool muzzleHasFlashed;
         private NemLightningColorController lightningController;

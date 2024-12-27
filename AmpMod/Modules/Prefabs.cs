@@ -62,7 +62,7 @@ namespace AmpMod.Modules
 
             model.AddComponent<CharacterModel>().baseRendererInfos = prefab.GetComponentInChildren<CharacterModel>().baseRendererInfos;
 
-            Modules.Assets.ConvertAllRenderersToHopooShader(model);
+            Modules.Asset.ConvertAllRenderersToHopooShader(model);
 
             return model.gameObject;
         }
@@ -207,13 +207,13 @@ namespace AmpMod.Modules
             AmpPlugin.DestroyImmediate(main.transform.Find("CameraPivot").gameObject);
             AmpPlugin.DestroyImmediate(main.transform.Find("AimOrigin").gameObject);
 
-            if (Modules.Assets.mainAssetBundle.LoadAsset<GameObject>(modelName) == null)
+            if (Modules.Asset.mainAssetBundle.LoadAsset<GameObject>(modelName) == null)
             {
                 Debug.LogError("Trying to load a null model- check to see if the name in your code matches the name of the object in Unity");
                 return null;
             }
 
-            return GameObject.Instantiate(Modules.Assets.mainAssetBundle.LoadAsset<GameObject>(modelName));
+            return GameObject.Instantiate(Modules.Asset.mainAssetBundle.LoadAsset<GameObject>(modelName));
         }
 
         internal static void SetupCharacterModel(GameObject prefab, CustomRendererInfo[] rendererInfo, int mainRendererIndex)
@@ -260,7 +260,7 @@ namespace AmpMod.Modules
 
             characterModel.autoPopulateLightInfos = true;
             characterModel.invisibilityCount = 0;
-            characterModel.temporaryOverlays = new List<TemporaryOverlay>();
+            characterModel.temporaryOverlays = new List<TemporaryOverlayInstance>();
 
             characterModel.mainSkinnedMeshRenderer = characterModel.baseRendererInfos[mainRendererIndex].renderer.GetComponent<SkinnedMeshRenderer>();
             //Debug.Log(characterModel.mainSkinnedMeshRenderer.transform.lossyScale.x + " is the x lossy scale for this skinnedmeshrenderer");

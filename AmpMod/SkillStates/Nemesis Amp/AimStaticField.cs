@@ -62,7 +62,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
             projectilePrefab = lightningController.fieldPrefab;
             muzzleflashEffect = lightningController.fieldMuzzleVFX;
 
-            fieldIndicatorInstance = UnityEngine.Object.Instantiate<GameObject>(Modules.Assets.staticFieldIndicatorPrefab);
+            fieldIndicatorInstance = UnityEngine.Object.Instantiate<GameObject>(Modules.Asset.staticFieldIndicatorPrefab);
             base.PlayAnimation("FullBody, Override", "AimField", "BaseSkill.playbackRate", 1f);
             //Debug.Log(fieldIndicatorInstance);
             this.UpdateAreaIndicator();

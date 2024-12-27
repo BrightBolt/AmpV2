@@ -17,7 +17,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         [Header("VFX/Animation/SFX Variables")]
         private string summonString = StaticValues.summonString;
         private Transform muzzleTransform;
-        private GameObject muzzleFlashEffect = Assets.stormMuzzleFlashEffect;
+        private GameObject muzzleFlashEffect = Asset.stormMuzzleFlashEffect;
         private NemLightningColorController lightningController;
         private Animator animator;
         [Header("Functionality Variables")]

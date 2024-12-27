@@ -24,19 +24,19 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         protected DamageType damageType = DamageType.Generic;
         protected float damageCoefficient = Modules.StaticValues.voidSlashDamageCoefficient;
         protected float procCoefficient = 1f;
-        protected GameObject swingEffectPrefab = Assets.lightningBladeSlashVFX;
-        protected GameObject hitEffectPrefab = Modules.Assets.lightningBladeHitVFX;
-        private GameObject spawnBladeVFX = Assets.spawnLightningBladeVFX;
+        protected GameObject swingEffectPrefab = Asset.lightningBladeSlashVFX;
+        protected GameObject hitEffectPrefab = Modules.Asset.lightningBladeHitVFX;
+        private GameObject spawnBladeVFX = Asset.spawnLightningBladeVFX;
         protected float stopwatch;
         private ChildLocator childLocator;
         protected Animator animator;
         private bool hasMuzzleEffect;
         private Transform muzzleTransform;
         private StackDamageController stackDamageController;
-        private GameObject muzzleEffectPrefab = Assets.lightningBladePrefab;
+        private GameObject muzzleEffectPrefab = Asset.lightningBladePrefab;
         protected float pushForce = 300f;
         protected Vector3 bonusForce = Vector3.zero;
-        protected NetworkSoundEventIndex impactSound = Modules.Assets.heatShockHitSoundEvent.index;
+        protected NetworkSoundEventIndex impactSound = Modules.Asset.heatShockHitSoundEvent.index;
 
         private String muzzleString = "SwingCenter";
         private bool inGroundedState;

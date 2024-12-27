@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 namespace AmpMod.Modules.Achievements
 {
-    [RegisterAchievement("NemAmpDashUnlock", "Skills.VoidDash", null, typeof(NemAmpDashAchievement.NemAmpDashServerAchievement))]
+    [RegisterAchievement("NemAmpDashUnlock", "Skills.VoidDash", null, 3, typeof(NemAmpDashAchievement.NemAmpDashServerAchievement))]
     public class NemAmpDashAchievement : BaseAchievement
     {
         public override BodyIndex LookUpRequiredBodyIndex()

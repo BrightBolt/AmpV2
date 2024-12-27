@@ -40,7 +40,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
             modelTransform = base.GetComponent<ModelLocator>().modelTransform;
             characterModel = modelTransform.GetComponent<CharacterModel>();
 
-            TemporaryOverlay temporaryOverlay = this.cachedModelTransform.gameObject.AddComponent<TemporaryOverlay>();
+            TemporaryOverlayInstance temporaryOverlay = TemporaryOverlayManager.AddOverlay(this.cachedModelTransform.gameObject);
             temporaryOverlay.duration = waitDuration;
             //temporaryOverlay.destroyObjectOnEnd = true;
             //temporaryOverlay.originalMaterial = LegacyResourcesAPI.Load<Material>("Materials/matShatteredGlass");

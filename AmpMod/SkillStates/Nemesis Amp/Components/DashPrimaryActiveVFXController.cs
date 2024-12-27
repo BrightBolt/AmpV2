@@ -17,7 +17,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp.Components
         private LineRenderer lineRenderer;
         private int numLineRendererPoints;
         private float posRange = .1f;
-        private GameObject activeVFX = Assets.plasmaActiveVFX;
+        private GameObject activeVFX = Asset.plasmaActiveVFX;
         private GameObject activeInstance;
         private bool isActive;
         private CharacterModel model;

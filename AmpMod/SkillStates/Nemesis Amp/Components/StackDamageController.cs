@@ -32,7 +32,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         private int growthBuffCount;
 
         [Header("Passive UI")]
-        public GameObject meterPrefab = Modules.Assets.passiveMeter;
+        public GameObject meterPrefab = Modules.Asset.passiveMeter;
         private Image passiveMeter;
         private bool allCreated;
         [SerializeField]
@@ -206,7 +206,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
         {
             OverlayCreationParams overlayCreationParams = new OverlayCreationParams
             {
-                prefab = Modules.Assets.passiveMeter,
+                prefab = Modules.Asset.passiveMeter,
                 childLocatorEntry = "BottomLeftCluster"
             };
 

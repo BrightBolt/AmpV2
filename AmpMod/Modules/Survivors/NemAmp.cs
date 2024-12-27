@@ -33,8 +33,8 @@ namespace AmpMod.Modules.Survivors
             bodyNameToken = AmpPlugin.developerPrefix + "_NEMAMP_BODY_NAME",
             //Color of skill names and stuff in menu
             bodyColor = new Color32(139, 0, 255, 255),
-            characterPortrait = Modules.Assets.LoadCharacterIcon("Nem"),
-            crosshair = Modules.Assets.LoadCrosshair("Standard"),
+            characterPortrait = Modules.Asset.LoadCharacterIcon("Nem"),
+            crosshair = Modules.Asset.LoadCrosshair("Standard"),
             damage = 12f,
             moveSpeed = 7.5f,
             healthGrowth = 33f,
@@ -48,8 +48,8 @@ namespace AmpMod.Modules.Survivors
 
 
 
-        internal static Material capeMat = Modules.Assets.CreateMaterial("matNemCape");
-        internal static Material suitMat = Modules.Assets.CreateMaterial("matNemSuit");
+        internal static Material capeMat = Modules.Asset.CreateMaterial("matNemCape");
+        internal static Material suitMat = Modules.Asset.CreateMaterial("matNemSuit");
         internal override int mainRendererIndex { get; set; } = 0;
 
         internal override CustomRendererInfo[] customRendererInfos { get; set; } = new CustomRendererInfo[] {
@@ -95,7 +95,7 @@ namespace AmpMod.Modules.Survivors
                 masterySkinUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 masterySkinUnlockableDef.cachedName = "Skins.Origin";
                 masterySkinUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_NEMAMP_BODY_MASTERY";
-                masterySkinUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemMasteryAchievement");
+                masterySkinUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemMasteryAchievement");
                 ContentAddition.AddUnlockableDef(masterySkinUnlockableDef);
             }
 
@@ -104,7 +104,7 @@ namespace AmpMod.Modules.Survivors
                 dashSkillUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 dashSkillUnlockableDef.cachedName = "Skills.VoidDash";
                 dashSkillUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_NEMAMP_BODY_DASH";
-                dashSkillUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemDash");
+                dashSkillUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemDash");
                 ContentAddition.AddUnlockableDef(dashSkillUnlockableDef);
             }
 
@@ -113,7 +113,7 @@ namespace AmpMod.Modules.Survivors
                 bladesSkillUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 bladesSkillUnlockableDef.cachedName = "Skills.TrackingBlades";
                 bladesSkillUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_NEMAMP_BODY_BLADES";
-                bladesSkillUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemBlades");
+                bladesSkillUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemBlades");
                 ContentAddition.AddUnlockableDef(bladesSkillUnlockableDef);
             }
 
@@ -122,7 +122,7 @@ namespace AmpMod.Modules.Survivors
                 photonSkillUnlockableDef = ScriptableObject.CreateInstance<UnlockableDef>();
                 photonSkillUnlockableDef.cachedName = "Skills.Laser";
                 photonSkillUnlockableDef.nameToken = AmpPlugin.developerPrefix + "_NEMAMP_BODY_LASER";
-                photonSkillUnlockableDef.achievementIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemPhoton");
+                photonSkillUnlockableDef.achievementIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemPhoton");
                 ContentAddition.AddUnlockableDef(photonSkillUnlockableDef);
            // } 
 
@@ -161,7 +161,7 @@ namespace AmpMod.Modules.Survivors
                   "Weapon",
                  prefix + "_NEMAMP_BODY_PRIMARY_LIGHTNING_NAME",
                  prefix + "_NEMAMP_BODY_PRIMARY_LIGHTNING_DESCRIPTION",
-                 Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texNemFulmination"),
+                 Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texNemFulmination"),
                  true,
                  new String[] { },
                  false); 
@@ -184,7 +184,7 @@ namespace AmpMod.Modules.Survivors
                 "Weapon",
                 prefix + "_NEMAMP_BODY_PRIMARY_BLADES_NAME",
                 prefix + "_NEMAMP_BODY_PRIMARY_BLADES_DESCRIPTION",
-                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texNemBlades"),
+                Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texNemBlades"),
                 true,
                 new String[] { },
                 false),
@@ -199,7 +199,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_NEMAMP_BODY_SECONDARY_CHARGEBEAM_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_SECONDARY_CHARGEBEAM_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_SECONDARY_CHARGEBEAM_DESCRIPTION",
-                skillIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemBeam"),
+                skillIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemBeam"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(ChargeLightningBeam)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -225,7 +225,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_NEMAMP_BODY_SECONDARY_SLASH_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_SECONDARY_SLASH_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_SECONDARY_SLASH_DESCRIPTION",
-                skillIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemSlash"),
+                skillIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemSlash"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(LightningSlash)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -259,7 +259,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_NEMAMP_BODY_UTILITY_FIELD_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_UTILITY_FIELD_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_UTILITY_FIELD_DESCRIPTION",
-                skillIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemField"),
+                skillIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemField"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(AimStaticField)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -286,7 +286,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_NEMAMP_BODY_UTILITY_DASH_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_UTILITY_DASH_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_UTILITY_DASH_DESCRIPTION",
-                skillIcon = Assets.mainAssetBundle.LoadAsset<Sprite>("texNemDash"),
+                skillIcon = Asset.mainAssetBundle.LoadAsset<Sprite>("texNemDash"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(QuickDash)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -320,7 +320,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_NEMAMP_BODY_SPECIAL_SUMMONSTORM_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_SPECIAL_SUMMONSTORM_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_SPECIAL_SUMMONSTORM_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texNemStorm"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texNemStorm"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(AOELightning)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
@@ -346,7 +346,7 @@ namespace AmpMod.Modules.Survivors
                 skillName = prefix + "_NEMAMP_BODY_SPECIAL_LASER_NAME",
                 skillNameToken = prefix + "_NEMAMP_BODY_SPECIAL_LASER_NAME",
                 skillDescriptionToken = prefix + "_NEMAMP_BODY_SPECIAL_LASER_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texNemStorm"),
+                skillIcon = Modules.Asset.mainAssetBundle.LoadAsset<Sprite>("texNemStorm"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(PhotonShot)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -428,7 +428,7 @@ namespace AmpMod.Modules.Survivors
 
             #region DefaultSkin
             SkinDef defaultSkin = Modules.Skins.CreateSkinDef(AmpPlugin.developerPrefix + "_NEMAMP_BODY_DEFAULT_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texNemDefault"),
+                Asset.mainAssetBundle.LoadAsset<Sprite>("texNemDefault"),
                 defaultRenderers,
                 mainRenderer,
                 updatedModel);
@@ -437,12 +437,12 @@ namespace AmpMod.Modules.Survivors
             {
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshNemAmp"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("meshNemAmp"),
                     renderer = defaultRenderers[0].renderer
                 },
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshNemCape"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("meshNemCape"),
                     renderer = defaultRenderers[1].renderer
                 },
             };
@@ -452,8 +452,8 @@ namespace AmpMod.Modules.Survivors
                
 
             #region MasterySkin
-            Material masterySuitMat = Modules.Assets.CreateMaterial("matNemSuitMastery");
-            Material masteryCapeMat = Modules.Assets.CreateMaterial("matNemCapeMastery");
+            Material masterySuitMat = Modules.Asset.CreateMaterial("matNemSuitMastery");
+            Material masteryCapeMat = Modules.Asset.CreateMaterial("matNemCapeMastery");
 
 
             CharacterModel.RendererInfo[] masteryRendererInfos = SkinRendererInfos(defaultRenderers, new Material[]
@@ -464,7 +464,7 @@ namespace AmpMod.Modules.Survivors
             });
 
             SkinDef masterySkin = Modules.Skins.CreateSkinDef(AmpPlugin.developerPrefix + "_NEMAMP_BODY_MASTERY_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texNemMasteryAchievement"),
+                Asset.mainAssetBundle.LoadAsset<Sprite>("texNemMasteryAchievement"),
                 masteryRendererInfos,
                 mainRenderer,
                 model,
@@ -474,12 +474,12 @@ namespace AmpMod.Modules.Survivors
             {
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshNemAmp"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("meshNemAmp"),
                     renderer = defaultRenderers[0].renderer
                 },
                 new SkinDef.MeshReplacement
                 {
-                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshNemCape"),
+                    mesh = Modules.Asset.mainAssetBundle.LoadAsset<Mesh>("meshNemCape"),
                     renderer = defaultRenderers[1].renderer
                 }
             }; 

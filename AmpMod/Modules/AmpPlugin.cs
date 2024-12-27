@@ -33,19 +33,7 @@ namespace AmpMod.Modules
     [BepInDependency("com.bepis.r2api", BepInDependency.DependencyFlags.HardDependency)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     [BepInPlugin(MODUID, MODNAME, MODVERSION)]
-    [R2APISubmoduleDependency(new string[]
-    {
-        "PrefabAPI",
-        "LanguageAPI",
-        "SoundAPI",
-        "DamageAPI",
-        nameof(ItemAPI),
-        //"OrbAPI",
-        //"EffectAPI",
-        nameof(UnlockableAPI),
-        "RecalculateStatsAPI",
-        "NetworkingAPI",
-    })]
+
 
     public class AmpPlugin : BaseUnityPlugin
     {
@@ -82,7 +70,7 @@ namespace AmpMod.Modules
             Language.Init(Info);
 
             // load assets and read config
-            Assets.Initialize();
+            Asset.Initialize();
             Modules.Config.ReadConfig();
             //Language.Init(Info);
             States.RegisterStates(); // register states for networking
@@ -534,7 +522,7 @@ namespace AmpMod.Modules
             {
                 if (body.inventory)
                 {
-                    if (body.inventory.GetItemCount(Assets.wormHealth) > 0)
+                    if (body.inventory.GetItemCount(Asset.wormHealth) > 0)
                     {
                         var ownerBody = body.master.minionOwnership.ownerMaster ? body.master.minionOwnership.ownerMaster.GetBody() : null;
                         if (ownerBody)

@@ -25,19 +25,19 @@ namespace AmpMod.SkillStates
         protected DamageType damageType = DamageType.Generic;
         protected float damageCoefficient = Modules.StaticValues.spinSlashDamageCoefficient;
         protected float procCoefficient = 1f;
-        protected GameObject swingEffectPrefab = Modules.Assets.heatSwing;
-        protected GameObject hitEffectPrefab = Modules.Assets.heatHit;
+        protected GameObject swingEffectPrefab = Modules.Asset.heatSwing;
+        protected GameObject hitEffectPrefab = Modules.Asset.heatHit;
         protected float stopwatch;
         private ChildLocator childLocator;
         protected Animator animator;
         private bool hasMuzzleEffect;
        
 
-        private GameObject muzzleEffectPrefab = Modules.Assets.plasmaMuzzle;
+        private GameObject muzzleEffectPrefab = Modules.Asset.plasmaMuzzle;
 
         protected float pushForce = 300f;
         protected Vector3 bonusForce = Vector3.zero;
-        protected NetworkSoundEventIndex impactSound = Modules.Assets.heatShockHitSoundEvent.index;
+        protected NetworkSoundEventIndex impactSound = Modules.Asset.heatShockHitSoundEvent.index;
         private bool hasFired = false;
         private string chargeSoundString = Modules.StaticValues.heatChargeString;
         public uint stopChargeSound;
