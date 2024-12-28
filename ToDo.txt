@@ -8,10 +8,7 @@ To do:
     - NemAmp
 	- Furious spark tracer disappears unusually fast
     - Amp
-	- Surge missing script complaints (also on fulmination; potential effectcomponent issue? jobtempalloc)
-	- fall damage cancellation doesn't work
-	- red sprite surge cancel vfx weird
-	- Voltaic bombardment has no sound or post-processing
+	- Voltaic bombardment has no post-processing
 
 - General
     - Change mod icon to have new Amp character portrait
@@ -39,7 +36,7 @@ To do:
 - NemAmp
     - Make nemamp body disappear in multiplayer
     - Finish Galvanic Cleave
-    - Finish Photon Shot
+    - Finish Radiant Judgement (new name for photon shot)
 
 For galvanic cleave, want:
 	-If in the air, reach to the sky and perform a downwards swing that hits enemies directly in front, above, and below
@@ -48,19 +45,16 @@ For galvanic cleave, want:
 
 - Clean up unity project animations folder
 - Adjust animations so aiming up actually makes you do things up
-- Alt special:
-	- Fire a blast of light in front of you that deals XXX% damage and detonates controlled charge for XXX% damage. Hold the ability to
-	focus the blast into a long range beam of light that deals XXX% damage and detonates controlled charge for XXX% damage.
-	- This is to be more technical, and both methods should have good sides: blast is quick, AOE, but sshorter range and lower CC damage
-	- Fire a burst, OR lock on and fire multiple beams
-	- OR instead of a shotgun burst, make it a short energy pulse/sword slash?
-	- OR a giant orb of electricity that you spawn that functions similar to loader pylon and that you can detonate for big damage
+- Alt special ideas:
+    - Fire a blast of light in front of you that deals XXX% damage and detonates controlled charge for XXX% damage. Hold the ability to focus the blast into a long range beam of light that deals XXX% damage and detonates controlled charge for XXX% damage.
+	- Blast is quick, AOE, but shorter range and lower CC damage
+    - Summon a Judgement Orb. After 3 seconds, the Judgement Orb splits and blasts every enemy Nemesis Amp has attacked during this time for 3 times the damage dealt to the target.
+    - Pierce an enemy with a needle of light. 
+
 - Add ancient scepter support for nemamp
-	-voltaic onslaught now causes enemies to give enemies a tesla coil-like status effect that shocks them & enemies next to them, with a duration dependent
-	on how many stacks of controlled charge they had; a base of 2 seconds with +1 second per stack. this cannot be reset until the status has run out)
+	-voltaic onslaught now causes enemies to give enemies a tesla coil-like status effect that shocks them & enemies next to them, with a duration dependent on how many stacks of controlled charge they had
 	- OR voltaic onslaught now adds extra lightning bombs to enemies (amount determined by CC stacks) that explode after a duration and chain to other enemies in the vicinity
-	- OR voltaic onslaught is now a global ability that strikes every enemy in the stage (this might be too laggy)
-	- Laser now deals even more bonus damage for every controlled charge stack, and laser chains will now generate another laser chain if they kill an enemy a la Will o Wisp
+
 - Add risk of options support
 - Add skills++ support
 - Add support for that one extra animation mod (badass emotes?)

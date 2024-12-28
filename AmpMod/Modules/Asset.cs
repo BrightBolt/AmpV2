@@ -1184,11 +1184,11 @@ namespace AmpMod.Modules
         {
             lightningStrikePrefab = PrefabAPI.InstantiateClone(LegacyResourcesAPI.Load<GameObject>("Prefabs/Effects/ImpactEffects/LightningStrikeImpact"), "lightningStrike", true);
             lightningStrikePrefab.AddComponent<NetworkIdentity>();
-            //lightningStrikePrefab.GetComponent<EffectComponent>().soundName = "Play_item_use_lighningArm";
+            lightningStrikePrefab.GetComponent<EffectComponent>().soundName = "Play_item_use_lighningArm";
 
             lightningStrikePrefabRed = PrefabAPI.InstantiateClone(LegacyResourcesAPI.Load<GameObject>("Prefabs/Effects/ImpactEffects/LightningStrikeImpact"), "lightningStrikeRed", true);
             lightningStrikePrefabRed.AddComponent<NetworkIdentity>();
-            //lightningStrikePrefabRed.GetComponent<EffectComponent>().soundName = "Play_item_use_lighningArm";
+            lightningStrikePrefabRed.GetComponent<EffectComponent>().soundName = "Play_item_use_lighningArm";
 
             Transform redLightningTransform = lightningStrikePrefabRed.transform;
             foreach (Transform child in redLightningTransform)

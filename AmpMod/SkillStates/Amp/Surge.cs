@@ -159,7 +159,8 @@ namespace AmpMod.SkillStates
 		{
 			if (base.characterBody.bodyFlags.HasFlag(CharacterBody.BodyFlags.IgnoreFallDamage))
 			{
-				base.characterBody.bodyFlags &= ~CharacterBody.BodyFlags.IgnoreFallDamage;
+                hitGroundInfo.velocity = Vector3.zero;
+                base.characterBody.bodyFlags &= ~CharacterBody.BodyFlags.IgnoreFallDamage;
 			}
 
 

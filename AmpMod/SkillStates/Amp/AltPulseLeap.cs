@@ -252,6 +252,7 @@ namespace AmpMod.SkillStates
                 {
                     base.characterBody.bodyFlags |= CharacterBody.BodyFlags.IgnoreFallDamage;
                     base.characterMotor.onHitGroundAuthority += this.CharacterMotor_onHitGround;
+                    //Debug.Log("adding fall dmg flag");
                 }
             }
 
@@ -279,11 +280,13 @@ namespace AmpMod.SkillStates
             }
         }
 
-        //hook to charactermotor to remove fall damage
+        //hook to charactermotor to remove fall damage invulnerability
         private void CharacterMotor_onHitGround(ref CharacterMotor.HitGroundInfo hitGroundInfo)
         {
+            
             if (base.characterBody.bodyFlags.HasFlag(CharacterBody.BodyFlags.IgnoreFallDamage))
             {
+                hitGroundInfo.velocity = Vector3.zero;
                 base.characterBody.bodyFlags &= ~CharacterBody.BodyFlags.IgnoreFallDamage;
             }
 
