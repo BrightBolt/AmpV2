@@ -3,12 +3,9 @@ To do:
     - network testing
     - Effect pooling
     - Orig stuff
-    - Post processing (CreateLightningPrefab) see how its been changed
     - luminous shot functionality
     - NemAmp
 	- Furious spark tracer disappears unusually fast
-    - Amp
-	- Voltaic bombardment has no post-processing
 
 - General
     - Change mod icon to have new Amp character portrait

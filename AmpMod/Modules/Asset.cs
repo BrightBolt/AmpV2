@@ -1196,7 +1196,7 @@ namespace AmpMod.Modules
                 switch (child.name)
                 {
                     case "PostProcess":
-                        //child.GetComponent<PostProcessVolume>().sharedProfile = mainAssetBundle.LoadAsset<PostProcessProfile>("ppLocalLightningRed");//Addressables.LoadAssetAsync<PostProcessProfile>("RoR2/Base/title/ppLocalTPActivation.asset").WaitForCompletion();
+                       child.GetComponent<PostProcessVolume>().sharedProfile = mainAssetBundle.LoadAsset<PostProcessProfile>("ppLocalLightningRed");//Addressables.LoadAssetAsync<PostProcessProfile>("RoR2/Base/title/ppLocalTPActivation.asset").WaitForCompletion();
                         break;
                     case "Ring":
                         child.GetComponent<ParticleSystemRenderer>().SetMaterial(matLightningLongRed);
