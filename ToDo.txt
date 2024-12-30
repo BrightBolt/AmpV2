@@ -5,7 +5,8 @@ To do:
     - Orig stuff
     - luminous shot functionality
     - NemAmp
-	- Furious spark tracer disappears unusually fast
+	- give furious spark hit effect
+	- update furious spark tracer to look more like the base lightning bolt vfx
 
 - General
     - Change mod icon to have new Amp character portrait

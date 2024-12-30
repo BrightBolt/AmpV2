@@ -109,9 +109,13 @@ namespace AmpMod.SkillStates.Nemesis_Amp
                     action(this);
                 }
                 _bulletAttack.damage += (baseDamage * this.additionalPierceDamageCoefficient);
-                //_bulletAttack.sniper = true;
                piercedCount++;
             };
+            if (piercedCount > 1)
+            {
+                //try this AFTER you fix the initial problem; would be cool to have a sound effect whenever you pierce
+                //bulletAttack.sniper = true;
+            }
         }
 
 
@@ -170,13 +174,14 @@ namespace AmpMod.SkillStates.Nemesis_Amp
                     //hitEffectPrefab = impactEffectPrefab,
                     tracerEffectPrefab = lightningController.beamObject,
                     isCrit = base.characterBody.RollCrit(),
-                    radius = this.radius, 
+                    radius = this.radius,
                     falloffModel = BulletAttack.FalloffModel.None,
                     stopperMask = LayerIndex.world.mask,
                     procCoefficient = 1f,
                     maxDistance = 160f,
                     smartCollision = true,
-                    damageType = DamageType.Generic,
+                    damageType = new DamageTypeCombo(DamageTypeCombo.Generic, DamageTypeExtended.Generic, DamageSource.Secondary)
+
 
                 };
                 beamAttack.AddModdedDamageType(DamageTypes.controlledChargeProc);
@@ -188,6 +193,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
 
                 //EffectManager.SimpleMuzzleFlash(muzzleFlashEffect, base.gameObject, "HandL", true);
                 Transform handTransform = childLocator.FindChild("HandL").transform;
+                
                 EffectManager.SpawnEffect(muzzleFlashEffect, new EffectData
                 {
                     origin = handTransform.position,
@@ -195,6 +201,7 @@ namespace AmpMod.SkillStates.Nemesis_Amp
                     //forceUnpooled = true,
                 },
                 true);
+                
                 //base.PlayAnimation("Gesture, Additive", "FireBeam", "BaseSkill.playbackRate", this.duration);
 
                 if (base.characterMotor)
