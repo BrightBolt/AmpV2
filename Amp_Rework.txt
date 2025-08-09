@@ -1,0 +1,54 @@
+GOALS:
+
+promote relentless gameplay: keep attacking at all times, never stop
+
+keep charge mechanic w/ sword
+
+keep general rhythm of Amp, but focus him into that first goal of promoting relentless gameplay
+
+keep homing for lorentz cannon somehow
+
+What is Amp? Amp is an aspect of lightning. He is the primordial storm. When you play Amp, you are playing as a 
+force of nature in the most base sense of the term. Electromagnetism is his domain. And the storm is perpetual,
+self-sustaining, never ending. Your enemies cannot outlast you, because you are eternal, as is the storm. 
+
+The difference between Nem Amp and Amp is mostly in the mobility, as Nem Amp rewards careful set up, Amp is just
+balls to the walls lightning storm. How do I reward, and encourage, that kind of playstyle? But still a focused
+playstyle, it can't just be "lightning cool" again. 
+
+
+IDEAS:
+
+- Give lorentz cannon homing by default (need something to separate it from NemAmps alternate primary then)
+    - Lorentz Railgun: Turn skill into a hitscan beam ?
+    - Proc coefficient?
+    - Maybe turn it into a quick burst, like an explosion directly in front of him to supp
+
+- Spark System (Spark Trigger? new name?) is a new passive that causes Amp to gain power from using his sword
+	- Activating charge on an enemy briefly empowers Amp for 3 seconds, increasing his damage and
+		- Give him chain lightning OR power up his secondary abilities
+	- Maybe make it act like a stack? Every detonation of charge increases Amp's damage by 20%
+
+- Passive: Lightning's Blessing
+	- Half of Amp's health is shield. Amp deals bonus damage when his shields are over half full. Shields can only be replenished through hitting enemies with melee attacks. Detonating charge stacks heals 3x as much shield as a normal attack.
+		- OR shields can only be replenished by hitting close enemies (radius similar to focus crystal)
+		
+
+
+
+- Skills to change:
+    - Plasma Slash: Using in the air now causes Amp to dash forward, slamming any enemy he hits to the ground.
+    - Lorentz Cannon: Now always homes. (Need to debuff somehow, too strong)
+    - Bulwark of Storms: Replace with "Short Circuit": Fire a quick, chaining bolt of lightning that stuns enemies and
+bounces up to 6 times. (needs to lock on (?))
+    - Wyrmfall: Now instead of summoning a lightning bolt, you become a lightning bolt, quickly teleporting up
+and smashing down on wherever you desire, dealing 1000% damage and stunning enemies in a radius around you (same radius
+as voltaic bombardment).
+
+- Short Circuit: Using replenishing attacks builds meter. Spawn chain lightning that
+
+- PRIORITY ORDER:
+Passive --> VFX Updates --> Wyrmfall --> Lobby Animation/Spawn Animation --> Plasma Slash --> Short Circuit --> Lorentz Cannon --> Animation bugfixing
+
+BALANCES CHANGES:
+- Reduced Amp melee damage from 150% to 100%
